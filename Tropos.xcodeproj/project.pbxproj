@@ -38,11 +38,6 @@
 		4A6987411CC80471002D3F87 /* TroposCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987401CC80471002D3F87 /* TroposCore.m */; };
 		4A6987431CC804FE002D3F87 /* UnitSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987421CC804FE002D3F87 /* UnitSystem.swift */; };
 		4A6987471CC80CBD002D3F87 /* SettingsControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987461CC80CBD002D3F87 /* SettingsControllerSpec.swift */; };
-		4A69874E1CC815BF002D3F87 /* PrecipitationChanceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987491CC815BF002D3F87 /* PrecipitationChanceFormatter.swift */; };
-		4A69874F1CC815BF002D3F87 /* RelativeDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69874A1CC815BF002D3F87 /* RelativeDateFormatter.swift */; };
-		4A6987501CC815BF002D3F87 /* TemperatureComparisonFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69874B1CC815BF002D3F87 /* TemperatureComparisonFormatter.swift */; };
-		4A6987511CC815BF002D3F87 /* TemperatureFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69874C1CC815BF002D3F87 /* TemperatureFormatter.swift */; };
-		4A6987521CC815BF002D3F87 /* WindSpeedFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69874D1CC815BF002D3F87 /* WindSpeedFormatter.swift */; };
 		4A6987581CC81698002D3F87 /* DailyForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987551CC81698002D3F87 /* DailyForecastViewModel.swift */; };
 		4A6987591CC81698002D3F87 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987561CC81698002D3F87 /* WeatherViewModel.swift */; };
 		4A69875D1CC817D9002D3F87 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69875A1CC817D9002D3F87 /* UIFont.swift */; };
@@ -57,6 +52,18 @@
 		4A8163931CC82D5100279952 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A552F801CC7D118008C7298 /* Localizable.strings */; };
 		4A8163941CC830A400279952 /* TRSettingsController+TRObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987681CC81D20002D3F87 /* TRSettingsController+TRObservation.m */; };
 		4A8163951CC830A700279952 /* TRWeatherUpdate+Analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987661CC81D20002D3F87 /* TRWeatherUpdate+Analytics.m */; };
+		4A8163961CC9093E00279952 /* PrecipitationChanceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A12261CC81F0000363A5C /* PrecipitationChanceFormatter.swift */; };
+		4A8163971CC9094400279952 /* RelativeDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A12271CC81F0000363A5C /* RelativeDateFormatter.swift */; };
+		4A8163981CC9094400279952 /* TemperatureComparisonFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A12281CC81F0000363A5C /* TemperatureComparisonFormatter.swift */; };
+		4A8163991CC9094400279952 /* TemperatureFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A12291CC81F0000363A5C /* TemperatureFormatter.swift */; };
+		4A81639A1CC9094400279952 /* WindSpeedFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A122A1CC81F0000363A5C /* WindSpeedFormatter.swift */; };
+		4A8163AA1CC90D5300279952 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4A8163A91CC90D5300279952 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4A8163B71CC90D5300279952 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4A81639D1CC90D5200279952 /* Watch.app */; };
+		4A8163C91CC90DF000279952 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8163C11CC90DC800279952 /* ExtensionDelegate.swift */; };
+		4A8163CA1CC90DF000279952 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8163BF1CC90DC800279952 /* InterfaceController.swift */; };
+		4A8163CD1CC90DF800279952 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8163CB1CC90DF800279952 /* Interface.storyboard */; };
+		4A8163CF1CC90E0900279952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8163CE1CC90E0900279952 /* Images.xcassets */; };
+		4A8163D01CC90E0D00279952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8163CE1CC90E0900279952 /* Images.xcassets */; };
 		4AB9C18A1CC8286F006CBC24 /* New York.placemark in Resources */ = {isa = PBXBuildFile; fileRef = 4A552F771CC7D063008C7298 /* New York.placemark */; };
 		4AC287A41CBC3D800064F48A /* Nimble.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135A1B432976001685BA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AC287A51CBC3D820064F48A /* Quick.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135B1B432976001685BA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -133,6 +140,20 @@
 			remoteGlobalIDString = 4A552EEE1CC7C8F8008C7298;
 			remoteInfo = TroposCore;
 		};
+		4A8163AB1CC90D5300279952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 198EF8739DFBDBC4FBC67D3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A8163A81CC90D5300279952;
+			remoteInfo = "Watch Extension";
+		};
+		4A8163B51CC90D5300279952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 198EF8739DFBDBC4FBC67D3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A81639C1CC90D5200279952;
+			remoteInfo = Watch;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -159,6 +180,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A8163BB1CC90D5300279952 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4A8163AA1CC90D5300279952 /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AC287A31CBC3D700064F48A /* Embed Carthage Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,6 +201,17 @@
 				4AC287A51CBC3D820064F48A /* Quick.framework in Embed Carthage Frameworks */,
 			);
 			name = "Embed Carthage Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF89FCE1CC7DA2500A56E4B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4A8163B71CC90D5300279952 /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -218,11 +261,6 @@
 		4A6987421CC804FE002D3F87 /* UnitSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSystem.swift; sourceTree = "<group>"; };
 		4A6987441CC80699002D3F87 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		4A6987461CC80CBD002D3F87 /* SettingsControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsControllerSpec.swift; sourceTree = "<group>"; };
-		4A6987491CC815BF002D3F87 /* PrecipitationChanceFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationChanceFormatter.swift; sourceTree = "<group>"; };
-		4A69874A1CC815BF002D3F87 /* RelativeDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativeDateFormatter.swift; sourceTree = "<group>"; };
-		4A69874B1CC815BF002D3F87 /* TemperatureComparisonFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureComparisonFormatter.swift; sourceTree = "<group>"; };
-		4A69874C1CC815BF002D3F87 /* TemperatureFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureFormatter.swift; sourceTree = "<group>"; };
-		4A69874D1CC815BF002D3F87 /* WindSpeedFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindSpeedFormatter.swift; sourceTree = "<group>"; };
 		4A6987551CC81698002D3F87 /* DailyForecastViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyForecastViewModel.swift; sourceTree = "<group>"; };
 		4A6987561CC81698002D3F87 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		4A69875A1CC817D9002D3F87 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
@@ -233,11 +271,24 @@
 		4A6987671CC81D20002D3F87 /* TRWeatherUpdate+Analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TRWeatherUpdate+Analytics.h"; sourceTree = "<group>"; };
 		4A6987681CC81D20002D3F87 /* TRSettingsController+TRObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TRSettingsController+TRObservation.m"; sourceTree = "<group>"; };
 		4A6987691CC81D20002D3F87 /* TRSettingsController+TRObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TRSettingsController+TRObservation.h"; sourceTree = "<group>"; };
+		4A7A12261CC81F0000363A5C /* PrecipitationChanceFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationChanceFormatter.swift; sourceTree = "<group>"; };
+		4A7A12271CC81F0000363A5C /* RelativeDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativeDateFormatter.swift; sourceTree = "<group>"; };
+		4A7A12281CC81F0000363A5C /* TemperatureComparisonFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureComparisonFormatter.swift; sourceTree = "<group>"; };
+		4A7A12291CC81F0000363A5C /* TemperatureFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureFormatter.swift; sourceTree = "<group>"; };
+		4A7A122A1CC81F0000363A5C /* WindSpeedFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindSpeedFormatter.swift; sourceTree = "<group>"; };
 		4A7A12331CC8219600363A5C /* TemperatureComparisonFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureComparisonFormatterSpec.swift; sourceTree = "<group>"; };
 		4A7A12341CC8219600363A5C /* TemperatureFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureFormatterSpec.swift; sourceTree = "<group>"; };
 		4A7A12381CC821DA00363A5C /* DailyForecastViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyForecastViewModelSpec.swift; sourceTree = "<group>"; };
 		4A7A123A1CC8223F00363A5C /* NSDate+ISO8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+ISO8601.swift"; sourceTree = "<group>"; };
 		4A8163911CC82B4D00279952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A81639D1CC90D5200279952 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8163A91CC90D5300279952 /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8163BF1CC90DC800279952 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4A8163C01CC90DC800279952 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8163C11CC90DC800279952 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4A8163C31CC90DE200279952 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8163CC1CC90DF800279952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4A8163CE1CC90E0900279952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4ACA58491CC526D600DD0CDC /* RACSignal+TROperators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+TROperators.h"; sourceTree = "<group>"; };
 		4ACA584A1CC526D600DD0CDC /* RACSignal+TROperators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+TROperators.m"; sourceTree = "<group>"; };
 		4D0A5C361A3A27510084C41E /* TRForecastController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRForecastController.h; sourceTree = "<group>"; };
@@ -326,6 +377,13 @@
 				4A552EF91CC7C8F8008C7298 /* TroposCore.framework in Frameworks */,
 				4A552F4F1CC7CC37008C7298 /* Quick.framework in Frameworks */,
 				4A552F501CC7CC39008C7298 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8163A61CC90D5300279952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +506,7 @@
 			children = (
 				4A69873D1CC803E6002D3F87 /* Controllers */,
 				4A552F841CC7D196008C7298 /* Extensions */,
-				4A6987481CC815BF002D3F87 /* Formatters */,
+				4A7A12251CC81F0000363A5C /* Formatters */,
 				4A552F541CC7CCF9008C7298 /* Models */,
 				4A6987531CC81698002D3F87 /* ViewModels */,
 				4A552F431CC7CB9B008C7298 /* TroposCore.h */,
@@ -555,18 +613,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4A6987481CC815BF002D3F87 /* Formatters */ = {
-			isa = PBXGroup;
-			children = (
-				4A6987491CC815BF002D3F87 /* PrecipitationChanceFormatter.swift */,
-				4A69874A1CC815BF002D3F87 /* RelativeDateFormatter.swift */,
-				4A69874B1CC815BF002D3F87 /* TemperatureComparisonFormatter.swift */,
-				4A69874C1CC815BF002D3F87 /* TemperatureFormatter.swift */,
-				4A69874D1CC815BF002D3F87 /* WindSpeedFormatter.swift */,
-			);
-			path = Formatters;
-			sourceTree = "<group>";
-		};
 		4A6987531CC81698002D3F87 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +630,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4A7A12251CC81F0000363A5C /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				4A7A12261CC81F0000363A5C /* PrecipitationChanceFormatter.swift */,
+				4A7A12271CC81F0000363A5C /* RelativeDateFormatter.swift */,
+				4A7A12281CC81F0000363A5C /* TemperatureComparisonFormatter.swift */,
+				4A7A12291CC81F0000363A5C /* TemperatureFormatter.swift */,
+				4A7A122A1CC81F0000363A5C /* WindSpeedFormatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
 		4A7A12321CC8219600363A5C /* Formatters */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +657,43 @@
 				4A7A12381CC821DA00363A5C /* DailyForecastViewModelSpec.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4AF89FAD1CC7DA2500A56E4B /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				4AF89FCF1CC7DAE200A56E4B /* App */,
+				4AF89FD71CC7DAE900A56E4B /* Extension */,
+				4AF89FE01CC7DB3700A56E4B /* Shared */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		4AF89FCF1CC7DAE200A56E4B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4A8163CB1CC90DF800279952 /* Interface.storyboard */,
+				4A8163C31CC90DE200279952 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4AF89FD71CC7DAE900A56E4B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4A8163C11CC90DC800279952 /* ExtensionDelegate.swift */,
+				4A8163BF1CC90DC800279952 /* InterfaceController.swift */,
+				4A8163C01CC90DC800279952 /* Info.plist */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4AF89FE01CC7DB3700A56E4B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4A8163CE1CC90E0900279952 /* Images.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		4D0A5C3E1A3A578E0084C41E /* Fonts */ = {
@@ -641,6 +736,8 @@
 				BE299336DA1BFBE36CB7763B /* UnitTests.xctest */,
 				4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */,
 				4A552EF81CC7C8F8008C7298 /* TroposCoreSpecs.xctest */,
+				4A81639D1CC90D5200279952 /* Watch.app */,
+				4A8163A91CC90D5300279952 /* Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -714,6 +811,7 @@
 			children = (
 				4A0DD7521CCA968500E7A451 /* Tropos */,
 				4A552EF01CC7C8F8008C7298 /* Core */,
+				4AF89FAD1CC7DA2500A56E4B /* Watch */,
 				79646077C042F7DDDC35EBEA /* Frameworks */,
 				702F42EA5C215DCFAE2AAC5C /* Products */,
 				21DDD3911F58296F86C19011 /* Pods */,
@@ -812,11 +910,13 @@
 				6D0F13551B4328C2001685BA /* Copy Carthage Frameworks */,
 				E9D11CFCA967ADDF3B704D82 /* Embed Pods Frameworks */,
 				4A552F091CC7C8F8008C7298 /* Embed Frameworks */,
+				4AF89FCE1CC7DA2500A56E4B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4A552F031CC7C8F8008C7298 /* PBXTargetDependency */,
+				4A8163B61CC90D5300279952 /* PBXTargetDependency */,
 			);
 			name = Tropos;
 			productName = CarlWeathers;
@@ -860,6 +960,40 @@
 			productName = TroposCoreTests;
 			productReference = 4A552EF81CC7C8F8008C7298 /* TroposCoreSpecs.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A81639C1CC90D5200279952 /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8163BC1CC90D5300279952 /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				4A81639B1CC90D5200279952 /* Resources */,
+				4A8163BB1CC90D5300279952 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A8163AC1CC90D5300279952 /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = 4A81639D1CC90D5200279952 /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4A8163A81CC90D5300279952 /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8163B81CC90D5300279952 /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				4A8163A51CC90D5300279952 /* Sources */,
+				4A8163A61CC90D5300279952 /* Frameworks */,
+				4A8163A71CC90D5300279952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = 4A8163A91CC90D5300279952 /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		AA349281EBCAE02432E93D8E /* UnitTests */ = {
 			isa = PBXNativeTarget;
@@ -911,6 +1045,13 @@
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = 45ADD324EABFD89F9E640007;
 					};
+					4A81639C1CC90D5200279952 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8E7TQ638ZD;
+					};
+					4A8163A81CC90D5300279952 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = 01015964F2486C2702150542 /* Build configuration list for PBXProject "Tropos" */;
@@ -922,6 +1063,7 @@
 				it,
 				sv,
 				"pl-PL",
+				Base,
 			);
 			mainGroup = D02B1FEF37316A9F6B8E4B34;
 			productRefGroup = 702F42EA5C215DCFAE2AAC5C /* Products */;
@@ -932,6 +1074,8 @@
 				AA349281EBCAE02432E93D8E /* UnitTests */,
 				4A552EEE1CC7C8F8008C7298 /* TroposCore-iOS */,
 				4A552EF71CC7C8F8008C7298 /* TroposCoreSpecs-iOS */,
+				4A81639C1CC90D5200279952 /* Watch */,
+				4A8163A81CC90D5300279952 /* Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -977,6 +1121,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB9C18A1CC8286F006CBC24 /* New York.placemark in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A81639B1CC90D5200279952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8163CD1CC90DF800279952 /* Interface.storyboard in Resources */,
+				4A8163CF1CC90E0900279952 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8163A71CC90D5300279952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8163D01CC90E0D00279952 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1136,29 +1297,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6987521CC815BF002D3F87 /* WindSpeedFormatter.swift in Sources */,
+				4A8163981CC9094400279952 /* TemperatureComparisonFormatter.swift in Sources */,
 				4A6987431CC804FE002D3F87 /* UnitSystem.swift in Sources */,
 				4A552F621CC7CCFA008C7298 /* TimeOfDay.swift in Sources */,
 				4A552F5E1CC7CCFA008C7298 /* DailyForecast.swift in Sources */,
 				4A552F641CC7CCFA008C7298 /* WeatherUpdateCache.swift in Sources */,
+				4A8163991CC9094400279952 /* TemperatureFormatter.swift in Sources */,
 				4A6987591CC81698002D3F87 /* WeatherViewModel.swift in Sources */,
+				4A81639A1CC9094400279952 /* WindSpeedFormatter.swift in Sources */,
 				4A6987411CC80471002D3F87 /* TroposCore.m in Sources */,
 				4A69875E1CC817D9002D3F87 /* UIColor.swift in Sources */,
 				4A69875F1CC817D9002D3F87 /* NSAttributedString.swift in Sources */,
-				4A6987511CC815BF002D3F87 /* TemperatureFormatter.swift in Sources */,
 				4A552F601CC7CCFA008C7298 /* PrecipitationChance.swift in Sources */,
 				4A552F631CC7CCFA008C7298 /* WeatherUpdate.swift in Sources */,
-				4A69874F1CC815BF002D3F87 /* RelativeDateFormatter.swift in Sources */,
 				4A69873F1CC80414002D3F87 /* SettingsController.swift in Sources */,
-				4A69874E1CC815BF002D3F87 /* PrecipitationChanceFormatter.swift in Sources */,
 				4A552F5D1CC7CCF9008C7298 /* CardinalDirection.swift in Sources */,
+				4A8163971CC9094400279952 /* RelativeDateFormatter.swift in Sources */,
 				4A552F861CC7D1A4008C7298 /* NSBundle.swift in Sources */,
 				4A6987581CC81698002D3F87 /* DailyForecastViewModel.swift in Sources */,
-				4A6987501CC815BF002D3F87 /* TemperatureComparisonFormatter.swift in Sources */,
 				4A69875D1CC817D9002D3F87 /* UIFont.swift in Sources */,
 				4A552F611CC7CCFA008C7298 /* Temperature.swift in Sources */,
 				4A552F5F1CC7CCFA008C7298 /* Precipitation.swift in Sources */,
 				4A552F881CC7D20D008C7298 /* NSLocalizedString.swift in Sources */,
+				4A8163961CC9093E00279952 /* PrecipitationChanceFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1178,6 +1339,15 @@
 				4A6987621CC818B4002D3F87 /* UIColor_TRTemperatureColorsSpec.swift in Sources */,
 				4A552F741CC7CD60008C7298 /* WeatherUpdateSpec.swift in Sources */,
 				4A552F701CC7CD60008C7298 /* CardinalDirectionSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8163A51CC90D5300279952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8163C91CC90DF000279952 /* ExtensionDelegate.swift in Sources */,
+				4A8163CA1CC90DF000279952 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1243,6 +1413,16 @@
 			target = 4A552EEE1CC7C8F8008C7298 /* TroposCore-iOS */;
 			targetProxy = 4A552F021CC7C8F8008C7298 /* PBXContainerItemProxy */;
 		};
+		4A8163AC1CC90D5300279952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A8163A81CC90D5300279952 /* Watch Extension */;
+			targetProxy = 4A8163AB1CC90D5300279952 /* PBXContainerItemProxy */;
+		};
+		4A8163B61CC90D5300279952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A81639C1CC90D5200279952 /* Watch */;
+			targetProxy = 4A8163B51CC90D5300279952 /* PBXContainerItemProxy */;
+		};
 		9BB8CE14790AABA30710CABC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 45ADD324EABFD89F9E640007 /* Tropos */;
@@ -1260,6 +1440,14 @@
 				4A552F831CC7D123008C7298 /* pl-PL */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4A8163CB1CC90DF800279952 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A8163CC1CC90DF800279952 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		C2E44CE61A3A4273009CC844 /* Localizable.strings */ = {
@@ -1408,6 +1596,122 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.TroposCoreSpecs;
 				PRODUCT_NAME = TroposCoreSpecs;
+			};
+			name = Release;
+		};
+		4A8163B91CC90D5300279952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "$(SRCROOT)/Watch/Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.carlweathers.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		4A8163BA1CC90D5300279952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "$(SRCROOT)/Watch/Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.carlweathers.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		4A8163BD1CC90D5300279952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/Watch/App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.carlweathers.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		4A8163BE1CC90D5300279952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/Watch/App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.carlweathers.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
@@ -1671,6 +1975,24 @@
 			buildConfigurations = (
 				4A552F0B1CC7C8F8008C7298 /* Debug */,
 				4A552F0C1CC7C8F8008C7298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8163B81CC90D5300279952 /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8163B91CC90D5300279952 /* Debug */,
+				4A8163BA1CC90D5300279952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8163BC1CC90D5300279952 /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8163BD1CC90D5300279952 /* Debug */,
+				4A8163BE1CC90D5300279952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

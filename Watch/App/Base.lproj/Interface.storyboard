@@ -5,16 +5,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Tropos-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
+                <controller title="Tropos" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
                     <items>
-                        <imageView alignment="left" id="Mkd-SQ-7Ee"/>
+                        <label alignment="left" verticalAlignment="center" text="Hello, Tropos!" textAlignment="left" numberOfLines="2" id="BcD-4e-mb6">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="34"/>
+                        </label>
                     </items>
-                    <connections>
-                        <outlet property="conditionsImage" destination="Mkd-SQ-7Ee" id="YyD-BA-ni1"/>
-                    </connections>
                 </controller>
             </objects>
         </scene>

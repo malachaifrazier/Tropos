@@ -96,6 +96,8 @@
 		4AC287A51CBC3D820064F48A /* Quick.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135B1B432976001685BA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4ACA584B1CC526D600DD0CDC /* RACSignal+TROperators.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA584A1CC526D600DD0CDC /* RACSignal+TROperators.m */; };
 		4AEF9F241CC91D3F0052A057 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8163CE1CC90E0900279952 /* Images.xcassets */; };
+		4AEF9F271CC91DD50052A057 /* WatchUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */; };
+		4AEF9F281CC91DD50052A057 /* WatchUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */; };
 		4D0A5C381A3A27510084C41E /* TRForecastController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A5C371A3A27510084C41E /* TRForecastController.m */; };
 		4D0A5C3D1A3A53DD0084C41E /* CWForecastDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A5C3C1A3A53DD0084C41E /* CWForecastDetailView.xib */; };
 		4D1ABA0B1A89686200B7F8FB /* TRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1ABA0A1A89686200B7F8FB /* TRNavigationBar.m */; };
@@ -340,6 +342,7 @@
 		4A9C1DDB1CC912F200E0AFA4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		4ACA58491CC526D600DD0CDC /* RACSignal+TROperators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+TROperators.h"; sourceTree = "<group>"; };
 		4ACA584A1CC526D600DD0CDC /* RACSignal+TROperators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+TROperators.m"; sourceTree = "<group>"; };
+		4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchUpdateController.swift; sourceTree = "<group>"; };
 		4D0A5C361A3A27510084C41E /* TRForecastController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRForecastController.h; sourceTree = "<group>"; };
 		4D0A5C371A3A27510084C41E /* TRForecastController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRForecastController.m; sourceTree = "<group>"; };
 		4D0A5C3C1A3A53DD0084C41E /* CWForecastDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CWForecastDetailView.xib; sourceTree = "<group>"; };
@@ -659,6 +662,7 @@
 			isa = PBXGroup;
 			children = (
 				4A69873E1CC80414002D3F87 /* SettingsController.swift */,
+				4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1402,6 +1406,7 @@
 				4A6987431CC804FE002D3F87 /* UnitSystem.swift in Sources */,
 				4A552F621CC7CCFA008C7298 /* TimeOfDay.swift in Sources */,
 				4A552F5E1CC7CCFA008C7298 /* DailyForecast.swift in Sources */,
+				4AEF9F271CC91DD50052A057 /* WatchUpdateController.swift in Sources */,
 				4A552F641CC7CCFA008C7298 /* WeatherUpdateCache.swift in Sources */,
 				4A8163991CC9094400279952 /* TemperatureFormatter.swift in Sources */,
 				4A6987591CC81698002D3F87 /* WeatherViewModel.swift in Sources */,
@@ -1460,6 +1465,7 @@
 				4A9C1DBF1CC9109300E0AFA4 /* SettingsController.swift in Sources */,
 				4A9C1DC01CC9109300E0AFA4 /* NSAttributedString.swift in Sources */,
 				4A9C1DC11CC9109300E0AFA4 /* NSBundle.swift in Sources */,
+				4AEF9F281CC91DD50052A057 /* WatchUpdateController.swift in Sources */,
 				4A9C1DC21CC9109300E0AFA4 /* NSLocalizedString.swift in Sources */,
 				4A9C1DC31CC9109300E0AFA4 /* UIColor.swift in Sources */,
 				4A9C1DC41CC9109300E0AFA4 /* UIFont.swift in Sources */,

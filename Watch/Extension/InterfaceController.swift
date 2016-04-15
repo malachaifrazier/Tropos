@@ -1,19 +1,26 @@
 import TroposCore
 import WatchKit
 
+private let dateFormatter: NSDateFormatter = {
+    let formatter = NSDateFormatter()
+    formatter.dateStyle = .MediumStyle
+    formatter.timeStyle = .ShortStyle
+    return formatter
+}()
+
 class InterfaceController: WKInterfaceController {
-    @IBOutlet private var conditionsImage: WKInterfaceImage!
+    @IBOutlet private var messageLabel: WKInterfaceLabel!
+    @IBOutlet private var updatedAtLabel: WKInterfaceLabel!
 
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override init() {
+        super.init()
+        updatedAtLabel.setHidden(true)
+    }
 
-        let clearForecast = DailyForecast(
-            date: NSDate(),
-            conditionsDescription: "clear-day",
-            highTemperature: Temperature(celsiusValue: 25),
-            lowTemperature: Temperature(celsiusValue: 10)
-        )
-        let viewModel = DailyForecastViewModel(dailyForecast: clearForecast)
-        conditionsImage.setImageNamed(viewModel.conditionsImageName)
+    func setWeatherUpdate(update: WeatherUpdate) {
+        messageLabel.setText(update.conditionsDescription)
+        let date = dateFormatter.stringFromDate(update.date)
+        updatedAtLabel.setText("Updated: \(date)")
+        updatedAtLabel.setHidden(false)
     }
 }

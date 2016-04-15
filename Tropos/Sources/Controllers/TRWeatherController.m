@@ -61,6 +61,7 @@
 
     [[self latestWeatherUpdates] subscribeNext:^(TRWeatherUpdate *update) {
         [[TRAnalyticsController sharedController] trackEvent:update];
+        [[TRWatchUpdateController defaultController] sendWeatherUpdate:update];
         [[TRWeatherUpdateCache new] archiveWeatherUpdate:update];
     }];
 

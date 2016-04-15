@@ -1,5 +1,6 @@
-#import <HockeySDK/HockeySDK.h>
+#import <WatchConnectivity/WatchConnectivity.h>
 #import <TroposCore/TroposCore.h>
+#import <HockeySDK/HockeySDK.h>
 #import "TRAppDelegate.h"
 #import "TRAnalyticsController.h"
 #import "TRApplicationController.h"
@@ -7,6 +8,9 @@
 #ifndef DEBUG
 #import "Secrets.h"
 #endif
+
+@interface TRAppDelegate () <WCSessionDelegate>
+@end
 
 @implementation TRAppDelegate
 
@@ -34,6 +38,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = self.applicationController.rootViewController;
     [self.window makeKeyAndVisible];
+
+    [[TRWatchUpdateController defaultController] activateSessionWithDelegate:self];
+    [[TRWatchUpdateController defaultController] sendWeatherUpdate:[[TRWeatherUpdateCache new] latestWeatherUpdate]];
 
     return YES;
 }

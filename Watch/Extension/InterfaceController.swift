@@ -17,6 +17,13 @@ class InterfaceController: WKInterfaceController {
         updatedAtLabel.setHidden(true)
     }
 
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
+        if let update = context as? WeatherUpdate ?? WeatherUpdateCache().latestWeatherUpdate {
+            setWeatherUpdate(update)
+        }
+    }
+
     func setWeatherUpdate(update: WeatherUpdate) {
         messageLabel.setText(update.conditionsDescription)
         let date = dateFormatter.stringFromDate(update.date)

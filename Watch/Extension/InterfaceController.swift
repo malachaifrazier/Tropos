@@ -1,13 +1,6 @@
 import TroposCore
 import WatchKit
 
-private let dateFormatter: NSDateFormatter = {
-    let formatter = NSDateFormatter()
-    formatter.dateStyle = .MediumStyle
-    formatter.timeStyle = .ShortStyle
-    return formatter
-}()
-
 class InterfaceController: WKInterfaceController {
     @IBOutlet private var messageLabel: WKInterfaceLabel!
     @IBOutlet private var updatedAtLabel: WKInterfaceLabel!
@@ -25,9 +18,9 @@ class InterfaceController: WKInterfaceController {
     }
 
     func setWeatherUpdate(update: WeatherUpdate) {
-        messageLabel.setText(update.conditionsDescription)
-        let date = dateFormatter.stringFromDate(update.date)
-        updatedAtLabel.setText("Updated: \(date)")
+        let viewModel = WeatherViewModel(weatherUpdate: update)
+        messageLabel.setAttributedText(viewModel.conditionsDescription)
+        updatedAtLabel.setText(viewModel.updatedDateString)
         updatedAtLabel.setHidden(false)
     }
 }

@@ -48,7 +48,9 @@ public extension WeatherViewModel {
         )
 
         let attributedString = NSMutableAttributedString(string: description)
+#if !os(watchOS)
         attributedString.font = .defaultUltraLightFont(size: 26)
+#endif
         attributedString.textColor = .defaultTextColor
 
         let difference = weatherUpdate.currentTemperature.temperatureDifferenceFrom(weatherUpdate.yesterdaysTemperature!)

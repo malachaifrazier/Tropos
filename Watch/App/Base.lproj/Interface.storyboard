@@ -12,8 +12,8 @@
                     <items>
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="hBG-gw-Mu4">
                             <items>
-                                <label alignment="left" text="Hello, Tropos!" textAlignment="left" numberOfLines="2" id="BcD-4e-mb6">
-                                    <fontDescription key="font" type="system" weight="medium" pointSize="34"/>
+                                <label alignment="left" text="Hello, Tropos!" textAlignment="left" numberOfLines="0" id="BcD-4e-mb6">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
                                 <label alignment="left" text="Label" numberOfLines="0" id="JLJ-WH-lr3">
                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

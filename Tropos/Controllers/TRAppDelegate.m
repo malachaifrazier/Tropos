@@ -1,5 +1,5 @@
 #import <HockeySDK/HockeySDK.h>
-#import "Tropos-Swift.h"
+#import <TroposCore/TroposCore.h>
 #import "TRAppDelegate.h"
 #import "TRAnalyticsController.h"
 #import "TRApplicationController.h"

@@ -2,6 +2,7 @@ import TroposCore
 import WatchKit
 
 class InterfaceController: WKInterfaceController {
+    @IBOutlet private var conditionsImage: WKInterfaceImage!
     @IBOutlet private var messageLabel: WKInterfaceLabel!
     @IBOutlet private var updatedAtLabel: WKInterfaceLabel!
 
@@ -19,6 +20,7 @@ class InterfaceController: WKInterfaceController {
 
     func setWeatherUpdate(update: WeatherUpdate) {
         let viewModel = WeatherViewModel(weatherUpdate: update)
+        conditionsImage.setImageNamed(viewModel.conditionsImageName)
         messageLabel.setAttributedText(viewModel.conditionsDescription)
         updatedAtLabel.setText(viewModel.updatedDateString)
         updatedAtLabel.setHidden(false)

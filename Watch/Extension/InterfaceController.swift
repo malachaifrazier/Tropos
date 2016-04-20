@@ -1,31 +1,19 @@
-//
-//  InterfaceController.swift
-//  Watch Extension
-//
-//  Created by Adam Sharp on 20/04/2016.
-//  Copyright © 2016 thoughtbot. All rights reserved.
-//
-
+import TroposCore
 import WatchKit
-import Foundation
-
 
 class InterfaceController: WKInterfaceController {
+    @IBOutlet private var conditionsImage: WKInterfaceImage!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        // Configure interface objects here.
-    }
 
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+        let clearForecast = DailyForecast(
+            date: NSDate(),
+            conditionsDescription: "clear-day",
+            highTemperature: Temperature(celsiusValue: 25),
+            lowTemperature: Temperature(celsiusValue: 10)
+        )
+        let viewModel = DailyForecastViewModel(dailyForecast: clearForecast)
+        conditionsImage.setImageNamed(viewModel.conditionsImageName)
     }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
 }

@@ -25,8 +25,17 @@ public extension WeatherViewModel {
         return dateFormatter.localizedStringFromDate(weatherUpdate.date)
     }
 
+    var conditionsImageName: String? {
+        return weatherUpdate.conditionsDescription
+    }
+
+    @available(watchOS, unavailable, message="load images using 'conditionsImageName' on watchOS")
     var conditionsImage: UIImage? {
-        return weatherUpdate.conditionsDescription.flatMap { UIImage(named: $0, inBundle: .troposBundle, compatibleWithTraitCollection: nil) }
+        #if !os(watchOS)
+            return conditionsImageName.flatMap { UIImage(named: $0, inBundle: .troposBundle, compatibleWithTraitCollection: nil) }
+        #else
+            return nil
+        #endif
     }
 
     var conditionsDescription: NSAttributedString {

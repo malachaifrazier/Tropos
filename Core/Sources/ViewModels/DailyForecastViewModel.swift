@@ -21,8 +21,17 @@ public extension DailyForecastViewModel {
         return formatter.stringFromDate(dailyForecast.date)
     }
 
+    var conditionsImageName: String {
+        return dailyForecast.conditionsDescription
+    }
+
+    @available(watchOS, unavailable, message="load images using 'conditionsImageName' on watchOS")
     var conditionsImage: UIImage? {
-        return UIImage(named: dailyForecast.conditionsDescription, inBundle: .troposBundle, compatibleWithTraitCollection: nil)
+        #if !os(watchOS)
+            return UIImage(named: conditionsImageName, inBundle: .troposBundle, compatibleWithTraitCollection: nil)
+        #else
+            return nil
+        #endif
     }
 
     var highTemperature: String {

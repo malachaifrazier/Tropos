@@ -17,8 +17,6 @@
 		4A2C6F6F1CC9659B0071E140 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7A12301CC81F9600363A5C /* CoreLocation.framework */; };
 		4A2C6F701CC965AE0071E140 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DDB1CC912F200E0AFA4 /* CoreLocation.framework */; };
 		4A2C6F721CC966360071E140 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F711CC966360071E140 /* LocationController.swift */; };
-		4A2C6F751CC96FAA0071E140 /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F741CC96FAA0071E140 /* CLLocation.swift */; };
-		4A2C6F761CC96FAA0071E140 /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F741CC96FAA0071E140 /* CLLocation.swift */; };
 		4A2C6F771CC9730F0071E140 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F711CC966360071E140 /* LocationController.swift */; };
 		4A2C6F781CC977FF0071E140 /* TroposCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; };
 		4A5197F51CC947A00076152C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F31CC947A00076152C /* Result.framework */; };
@@ -292,7 +290,6 @@
 		4A2C6F671CC963540071E140 /* ForecastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastController.swift; sourceTree = "<group>"; };
 		4A2C6F681CC963540071E140 /* GeocodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodeController.swift; sourceTree = "<group>"; };
 		4A2C6F711CC966360071E140 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
-		4A2C6F741CC96FAA0071E140 /* CLLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
 		4A5197F31CC947A00076152C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		4A5197F41CC947A00076152C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TroposCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -663,7 +660,6 @@
 				4A552F871CC7D20D008C7298 /* NSLocalizedString.swift */,
 				4A69875B1CC817D9002D3F87 /* UIColor.swift */,
 				4A69875A1CC817D9002D3F87 /* UIFont.swift */,
-				4A2C6F741CC96FAA0071E140 /* CLLocation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1430,7 +1426,6 @@
 				4A8163981CC9094400279952 /* TemperatureComparisonFormatter.swift in Sources */,
 				4A6987431CC804FE002D3F87 /* UnitSystem.swift in Sources */,
 				4A552F621CC7CCFA008C7298 /* TimeOfDay.swift in Sources */,
-				4A2C6F751CC96FAA0071E140 /* CLLocation.swift in Sources */,
 				4A552F5E1CC7CCFA008C7298 /* DailyForecast.swift in Sources */,
 				4AEF9F271CC91DD50052A057 /* WatchUpdateController.swift in Sources */,
 				4A552F641CC7CCFA008C7298 /* WeatherUpdateCache.swift in Sources */,
@@ -1493,7 +1488,6 @@
 				4A9C1DD51CC9109C00E0AFA4 /* TroposCore.m in Sources */,
 				4A9C1DBF1CC9109300E0AFA4 /* SettingsController.swift in Sources */,
 				4A9C1DC01CC9109300E0AFA4 /* NSAttributedString.swift in Sources */,
-				4A2C6F761CC96FAA0071E140 /* CLLocation.swift in Sources */,
 				4A9C1DC11CC9109300E0AFA4 /* NSBundle.swift in Sources */,
 				4AEF9F281CC91DD50052A057 /* WatchUpdateController.swift in Sources */,
 				4A9C1DC21CC9109300E0AFA4 /* NSLocalizedString.swift in Sources */,

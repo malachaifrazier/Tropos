@@ -27,10 +27,10 @@ import Result
     public var updateCurrentLocation: RACSignal {
         let currentLocationUpdated: SignalProducer<CLLocation, NSError> = didUpdateLocations
             .promoteErrors(NSError.self)
+            .take(1)
             .flatMap(.Concat) {
                 SignalProducer(values: $0)
             }
-            .filter { !$0.isStale }
 
         let locationUpdateFailed: SignalProducer<CLLocation, NSError> = didFailWithError
             .promoteErrors(NSError.self)
@@ -40,8 +40,8 @@ import Result
 
         return SignalProducer(values: [currentLocationUpdated, locationUpdateFailed])
             .flatten(.Merge)
-            .take(1)
-            .on(started: startUpdatingLocation, completed: stopUpdatingLocation)
+            .takeLast(1)
+            .on(started: locationManager.requestLocation)
             .toRACSignal()
     }
 
@@ -51,18 +51,6 @@ import Result
 }
 
 private extension LocationController {
-    func startUpdatingLocation() {
-#if os(watchOS)
-        locationManager.requestLocation()
-#else
-        locationManager.startUpdatingLocation()
-#endif
-    }
-
-    func stopUpdatingLocation() {
-        locationManager.stopUpdatingLocation()
-    }
-
     var needsAuthorization: Bool {
         return authorizationStatusEqualTo(.NotDetermined)
     }

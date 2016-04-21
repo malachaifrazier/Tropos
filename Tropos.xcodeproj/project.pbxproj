@@ -11,6 +11,7 @@
 		4A0DD7161CCA62E400E7A451 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A16625A1CCAAAA6002DAD94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1662591CCAAAA6002DAD94 /* Images.xcassets */; };
 		4A2C6F641CC951030071E140 /* GeocodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F631CC951030071E140 /* GeocodeController.swift */; };
+		4A2C6F661CC957B40071E140 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F651CC957B40071E140 /* ForecastController.swift */; };
 		4A5197F51CC947A00076152C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F31CC947A00076152C /* Result.framework */; };
 		4A5197F61CC947A00076152C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F41CC947A00076152C /* ReactiveCocoa.framework */; };
 		4A5197F71CC9488C0076152C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F41CC947A00076152C /* ReactiveCocoa.framework */; };
@@ -102,7 +103,6 @@
 		4ACA584B1CC526D600DD0CDC /* RACSignal+TROperators.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA584A1CC526D600DD0CDC /* RACSignal+TROperators.m */; };
 		4AEF9F271CC91DD50052A057 /* WatchUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */; };
 		4AEF9F281CC91DD50052A057 /* WatchUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */; };
-		4D0A5C381A3A27510084C41E /* TRForecastController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A5C371A3A27510084C41E /* TRForecastController.m */; };
 		4D0A5C3D1A3A53DD0084C41E /* CWForecastDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A5C3C1A3A53DD0084C41E /* CWForecastDetailView.xib */; };
 		4D1ABA0B1A89686200B7F8FB /* TRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1ABA0A1A89686200B7F8FB /* TRNavigationBar.m */; };
 		4D3336F61A80BE16001BA9A8 /* TRDailyForecastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3336F51A80BE16001BA9A8 /* TRDailyForecastView.xib */; };
@@ -283,6 +283,7 @@
 		449386DB1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4A1662591CCAAAA6002DAD94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A2C6F631CC951030071E140 /* GeocodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodeController.swift; sourceTree = "<group>"; };
+		4A2C6F651CC957B40071E140 /* ForecastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastController.swift; sourceTree = "<group>"; };
 		4A5197F31CC947A00076152C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		4A5197F41CC947A00076152C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TroposCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -349,8 +350,6 @@
 		4ACA58491CC526D600DD0CDC /* RACSignal+TROperators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+TROperators.h"; sourceTree = "<group>"; };
 		4ACA584A1CC526D600DD0CDC /* RACSignal+TROperators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+TROperators.m"; sourceTree = "<group>"; };
 		4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchUpdateController.swift; sourceTree = "<group>"; };
-		4D0A5C361A3A27510084C41E /* TRForecastController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRForecastController.h; sourceTree = "<group>"; };
-		4D0A5C371A3A27510084C41E /* TRForecastController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRForecastController.m; sourceTree = "<group>"; };
 		4D0A5C3C1A3A53DD0084C41E /* CWForecastDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CWForecastDetailView.xib; sourceTree = "<group>"; };
 		4D1ABA091A89686200B7F8FB /* TRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNavigationBar.h; sourceTree = "<group>"; };
 		4D1ABA0A1A89686200B7F8FB /* TRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNavigationBar.m; sourceTree = "<group>"; };
@@ -488,12 +487,11 @@
 				4D9A00051A9D61CD000835A9 /* TRAnalyticsController.m */,
 				0CC72A6E0EE525537F241EB7 /* TRAppDelegate.h */,
 				A6B1ADBC73A8A2EF7FB4E257 /* TRAppDelegate.m */,
-				4D0A5C361A3A27510084C41E /* TRForecastController.h */,
-				4D0A5C371A3A27510084C41E /* TRForecastController.m */,
 				C2E44CDB1A3A38A2009CC844 /* TRLocationController.h */,
 				C2E44CDC1A3A38A2009CC844 /* TRLocationController.m */,
 				E7A895521AFD11AA0023205B /* TRApplicationController.h */,
 				E7A895531AFD11AA0023205B /* TRApplicationController.m */,
+				4A2C6F651CC957B40071E140 /* ForecastController.swift */,
 				4A2C6F631CC951030071E140 /* GeocodeController.swift */,
 			);
 			path = Controllers;
@@ -1517,10 +1515,10 @@
 				4D7389DF1A9890CD0039F13B /* UIScrollView+TRReactiveCocoa.m in Sources */,
 				4DC069CD1A95B8F800F3BCEB /* TRColorBackdropLayer.m in Sources */,
 				4A8163941CC830A400279952 /* TRSettingsController+TRObservation.m in Sources */,
+				4A2C6F661CC957B40071E140 /* ForecastController.swift in Sources */,
 				4DDF65061AB3AC0C00909D67 /* TRWeatherController.m in Sources */,
 				4ACA584B1CC526D600DD0CDC /* RACSignal+TROperators.m in Sources */,
 				4A2C6F641CC951030071E140 /* GeocodeController.swift in Sources */,
-				4D0A5C381A3A27510084C41E /* TRForecastController.m in Sources */,
 				4D49554C1A8C298A0066F278 /* TRRefreshView.m in Sources */,
 				C2E44CEF1A3B6E89009CC844 /* NSDate+TRRelativeDate.m in Sources */,
 				4D4937781A82F30D007A1FA9 /* TRLabel.m in Sources */,

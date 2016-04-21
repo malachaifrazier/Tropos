@@ -38,8 +38,7 @@ import Result
                 SignalProducer(error: $0)
             }
 
-        return SignalProducer(values: [currentLocationUpdated, locationUpdateFailed])
-            .flatten(.Merge)
+        return SignalProducer.unify(producers: [currentLocationUpdated, locationUpdateFailed])
             .takeLast(1)
             .on(started: locationManager.requestLocation)
             .toRACSignal()

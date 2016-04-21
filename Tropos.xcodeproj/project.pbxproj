@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		46660A27B04F4C7B78A7920F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436D9431497525313B32E225 /* Foundation.framework */; };
-		4A16625A1CCAAAA6002DAD94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1662591CCAAAA6002DAD94 /* Images.xcassets */; };
 		4A0DD7161CCA62E400E7A451 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A16625A1CCAAAA6002DAD94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1662591CCAAAA6002DAD94 /* Images.xcassets */; };
+		4A2C6F641CC951030071E140 /* GeocodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F631CC951030071E140 /* GeocodeController.swift */; };
 		4A5197F51CC947A00076152C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F31CC947A00076152C /* Result.framework */; };
 		4A5197F61CC947A00076152C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F41CC947A00076152C /* ReactiveCocoa.framework */; };
 		4A5197F71CC9488C0076152C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F41CC947A00076152C /* ReactiveCocoa.framework */; };
@@ -111,7 +112,6 @@
 		4D49554C1A8C298A0066F278 /* TRRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D49554B1A8C298A0066F278 /* TRRefreshView.m */; };
 		4D49554F1A8C29C30066F278 /* TRCircularProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D49554E1A8C29C30066F278 /* TRCircularProgressLayer.m */; };
 		4D4955521A8C2B5D0066F278 /* UIImage+TRColorBackdrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4955511A8C2B5D0066F278 /* UIImage+TRColorBackdrop.m */; };
-		4D72D12A1A7330E700FAB67B /* TRGeocodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72D1291A7330E700FAB67B /* TRGeocodeController.m */; };
 		4D7389DF1A9890CD0039F13B /* UIScrollView+TRReactiveCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7389DE1A9890CD0039F13B /* UIScrollView+TRReactiveCocoa.m */; };
 		4D76CCD41A99C3FA00DDE5EB /* TRRefreshLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D76CCD31A99C3FA00DDE5EB /* TRRefreshLayer.m */; };
 		4D7CDEBC1A46D3610038DD33 /* CLLocation+TRRecentLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CDEBB1A46D3610038DD33 /* CLLocation+TRRecentLocation.m */; };
@@ -282,6 +282,7 @@
 		449386DA1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		449386DB1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4A1662591CCAAAA6002DAD94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A2C6F631CC951030071E140 /* GeocodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodeController.swift; sourceTree = "<group>"; };
 		4A5197F31CC947A00076152C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		4A5197F41CC947A00076152C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TroposCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -366,8 +367,6 @@
 		4D49554E1A8C29C30066F278 /* TRCircularProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCircularProgressLayer.m; sourceTree = "<group>"; };
 		4D4955501A8C2B5D0066F278 /* UIImage+TRColorBackdrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TRColorBackdrop.h"; sourceTree = "<group>"; };
 		4D4955511A8C2B5D0066F278 /* UIImage+TRColorBackdrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TRColorBackdrop.m"; sourceTree = "<group>"; };
-		4D72D1281A7330E700FAB67B /* TRGeocodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGeocodeController.h; sourceTree = "<group>"; };
-		4D72D1291A7330E700FAB67B /* TRGeocodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGeocodeController.m; sourceTree = "<group>"; };
 		4D7389DD1A9890CD0039F13B /* UIScrollView+TRReactiveCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TRReactiveCocoa.h"; sourceTree = "<group>"; };
 		4D7389DE1A9890CD0039F13B /* UIScrollView+TRReactiveCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TRReactiveCocoa.m"; sourceTree = "<group>"; };
 		4D76CCD21A99C3FA00DDE5EB /* TRRefreshLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRefreshLayer.h; sourceTree = "<group>"; };
@@ -493,10 +492,9 @@
 				4D0A5C371A3A27510084C41E /* TRForecastController.m */,
 				C2E44CDB1A3A38A2009CC844 /* TRLocationController.h */,
 				C2E44CDC1A3A38A2009CC844 /* TRLocationController.m */,
-				4D72D1281A7330E700FAB67B /* TRGeocodeController.h */,
-				4D72D1291A7330E700FAB67B /* TRGeocodeController.m */,
 				E7A895521AFD11AA0023205B /* TRApplicationController.h */,
 				E7A895531AFD11AA0023205B /* TRApplicationController.m */,
+				4A2C6F631CC951030071E140 /* GeocodeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1521,6 +1519,7 @@
 				4A8163941CC830A400279952 /* TRSettingsController+TRObservation.m in Sources */,
 				4DDF65061AB3AC0C00909D67 /* TRWeatherController.m in Sources */,
 				4ACA584B1CC526D600DD0CDC /* RACSignal+TROperators.m in Sources */,
+				4A2C6F641CC951030071E140 /* GeocodeController.swift in Sources */,
 				4D0A5C381A3A27510084C41E /* TRForecastController.m in Sources */,
 				4D49554C1A8C298A0066F278 /* TRRefreshView.m in Sources */,
 				C2E44CEF1A3B6E89009CC844 /* NSDate+TRRelativeDate.m in Sources */,
@@ -1540,7 +1539,6 @@
 				4D1ABA0B1A89686200B7F8FB /* TRNavigationBar.m in Sources */,
 				CE5D7F3B45F980082E1BCA30 /* LaunchScreen.xib in Sources */,
 				C9318C8461EB5FE3914F9AC0 /* main.m in Sources */,
-				4D72D12A1A7330E700FAB67B /* TRGeocodeController.m in Sources */,
 				4D7CDEBC1A46D3610038DD33 /* CLLocation+TRRecentLocation.m in Sources */,
 				4D4955521A8C2B5D0066F278 /* UIImage+TRColorBackdrop.m in Sources */,
 				4D49377B1A82F33B007A1FA9 /* CATransition+TRFadeTransition.m in Sources */,
@@ -1962,7 +1960,7 @@
 				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Tropos/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tropos/Sources/Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -2059,7 +2057,7 @@
 				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Tropos/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tropos/Sources/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;

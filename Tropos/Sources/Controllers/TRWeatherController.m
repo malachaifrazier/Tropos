@@ -6,8 +6,8 @@
 #import "TRLocationController.h"
 #import "TRForecastController.h"
 #import "TRSettingsController+TRObservation.h"
-#import "TRGeocodeController.h"
 #import "TRAnalyticsController.h"
+#import "Tropos-Swift.h"
 
 @interface TRWeatherController ()
 

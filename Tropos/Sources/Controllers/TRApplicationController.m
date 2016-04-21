@@ -1,7 +1,7 @@
 @import CoreLocation;
+@import TroposCore;
 #import "TRApplicationController.h"
 #import "TRWeatherController.h"
-#import "TRLocationController.h"
 
 @interface TRApplicationController ()
 

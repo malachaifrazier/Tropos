@@ -4,7 +4,6 @@
 #import "Secrets.h"
 #import "TRWeatherController.h"
 #import "TRWeatherUpdate+Analytics.h"
-#import "TRLocationController.h"
 #import "TRSettingsController+TRObservation.h"
 #import "TRAnalyticsController.h"
 

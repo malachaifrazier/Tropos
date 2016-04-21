@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46660A27B04F4C7B78A7920F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436D9431497525313B32E225 /* Foundation.framework */; };
+		4A16625A1CCAAAA6002DAD94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1662591CCAAAA6002DAD94 /* Images.xcassets */; };
 		4A552EF91CC7C8F8008C7298 /* TroposCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; };
 		4A552F041CC7C8F8008C7298 /* TroposCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; };
 		4A552F051CC7C8F8008C7298 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -62,7 +63,6 @@
 		4A8163C91CC90DF000279952 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8163C11CC90DC800279952 /* ExtensionDelegate.swift */; };
 		4A8163CA1CC90DF000279952 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8163BF1CC90DC800279952 /* InterfaceController.swift */; };
 		4A8163CD1CC90DF800279952 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8163CB1CC90DF800279952 /* Interface.storyboard */; };
-		4A8163CF1CC90E0900279952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8163CE1CC90E0900279952 /* Images.xcassets */; };
 		4A9C1DB91CC9104200E0AFA4 /* TroposCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */; };
 		4A9C1DBA1CC9104200E0AFA4 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A9C1DBF1CC9109300E0AFA4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69873E1CC80414002D3F87 /* SettingsController.swift */; };
@@ -95,7 +95,6 @@
 		4AC287A41CBC3D800064F48A /* Nimble.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135A1B432976001685BA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AC287A51CBC3D820064F48A /* Quick.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135B1B432976001685BA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4ACA584B1CC526D600DD0CDC /* RACSignal+TROperators.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA584A1CC526D600DD0CDC /* RACSignal+TROperators.m */; };
-		4AEF9F241CC91D3F0052A057 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8163CE1CC90E0900279952 /* Images.xcassets */; };
 		4AEF9F271CC91DD50052A057 /* WatchUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */; };
 		4AEF9F281CC91DD50052A057 /* WatchUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */; };
 		4D0A5C381A3A27510084C41E /* TRForecastController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A5C371A3A27510084C41E /* TRForecastController.m */; };
@@ -278,6 +277,7 @@
 		436D9431497525313B32E225 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		449386DA1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		449386DB1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4A1662591CCAAAA6002DAD94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TroposCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A552EF81CC7C8F8008C7298 /* TroposCoreSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TroposCoreSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A552F421CC7CB9B008C7298 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -337,7 +337,6 @@
 		4A8163C11CC90DC800279952 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		4A8163C31CC90DE200279952 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A8163CC1CC90DF800279952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		4A8163CE1CC90E0900279952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TroposCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9C1DDB1CC912F200E0AFA4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		4ACA58491CC526D600DD0CDC /* RACSignal+TROperators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+TROperators.h"; sourceTree = "<group>"; };
@@ -726,7 +725,6 @@
 			children = (
 				4AF89FCF1CC7DAE200A56E4B /* App */,
 				4AF89FD71CC7DAE900A56E4B /* Extension */,
-				4AF89FE01CC7DB3700A56E4B /* Shared */,
 			);
 			path = Watch;
 			sourceTree = "<group>";
@@ -735,6 +733,7 @@
 			isa = PBXGroup;
 			children = (
 				4A8163CB1CC90DF800279952 /* Interface.storyboard */,
+				4A1662591CCAAAA6002DAD94 /* Images.xcassets */,
 				4A8163C31CC90DE200279952 /* Info.plist */,
 			);
 			path = App;
@@ -748,14 +747,6 @@
 				4A8163C01CC90DC800279952 /* Info.plist */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		4AF89FE01CC7DB3700A56E4B /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				4A8163CE1CC90E0900279952 /* Images.xcassets */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		4D0A5C3E1A3A578E0084C41E /* Fonts */ = {
@@ -1226,7 +1217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8163CD1CC90DF800279952 /* Interface.storyboard in Resources */,
-				4A8163CF1CC90E0900279952 /* Images.xcassets in Resources */,
+				4A16625A1CCAAAA6002DAD94 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1234,7 +1225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AEF9F241CC91D3F0052A057 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		46660A27B04F4C7B78A7920F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436D9431497525313B32E225 /* Foundation.framework */; };
 		4A16625A1CCAAAA6002DAD94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1662591CCAAAA6002DAD94 /* Images.xcassets */; };
+		4A0DD7161CCA62E400E7A451 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A5197F51CC947A00076152C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F31CC947A00076152C /* Result.framework */; };
+		4A5197F61CC947A00076152C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F41CC947A00076152C /* ReactiveCocoa.framework */; };
+		4A5197F71CC9488C0076152C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F41CC947A00076152C /* ReactiveCocoa.framework */; };
+		4A5197F81CC948910076152C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F31CC947A00076152C /* Result.framework */; };
 		4A552EF91CC7C8F8008C7298 /* TroposCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; };
 		4A552F041CC7C8F8008C7298 /* TroposCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; };
 		4A552F051CC7C8F8008C7298 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -64,7 +69,6 @@
 		4A8163CA1CC90DF000279952 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8163BF1CC90DC800279952 /* InterfaceController.swift */; };
 		4A8163CD1CC90DF800279952 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8163CB1CC90DF800279952 /* Interface.storyboard */; };
 		4A9C1DB91CC9104200E0AFA4 /* TroposCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */; };
-		4A9C1DBA1CC9104200E0AFA4 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A9C1DBF1CC9109300E0AFA4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69873E1CC80414002D3F87 /* SettingsController.swift */; };
 		4A9C1DC01CC9109300E0AFA4 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69875C1CC817D9002D3F87 /* NSAttributedString.swift */; };
 		4A9C1DC11CC9109300E0AFA4 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A552F851CC7D1A4008C7298 /* NSBundle.swift */; };
@@ -193,6 +197,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4A0DD7151CCA62C300E7A451 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				4A0DD7161CCA62E400E7A451 /* TroposCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A552F091CC7C8F8008C7298 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,17 +240,6 @@
 				4A8163AA1CC90D5300279952 /* Watch Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A9C1DBE1CC9104200E0AFA4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4A9C1DBA1CC9104200E0AFA4 /* TroposCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4AC287A31CBC3D700064F48A /* Embed Carthage Frameworks */ = {
@@ -278,6 +282,8 @@
 		449386DA1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		449386DB1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4A1662591CCAAAA6002DAD94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A5197F31CC947A00076152C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		4A5197F41CC947A00076152C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TroposCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A552EF81CC7C8F8008C7298 /* TroposCoreSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TroposCoreSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A552F421CC7CB9B008C7298 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -451,7 +457,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9C1DDD1CC9130700E0AFA4 /* CoreLocation.framework in Frameworks */,
+				4A5197F61CC947A00076152C /* ReactiveCocoa.framework in Frameworks */,
 				46660A27B04F4C7B78A7920F /* Foundation.framework in Frameworks */,
+				4A5197F51CC947A00076152C /* Result.framework in Frameworks */,
 				4A552F041CC7C8F8008C7298 /* TroposCore.framework in Frameworks */,
 				7D54C46B9E7FA5B0724FC775 /* libPods.a in Frameworks */,
 			);
@@ -461,6 +469,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5197F71CC9488C0076152C /* ReactiveCocoa.framework in Frameworks */,
+				4A5197F81CC948910076152C /* Result.framework in Frameworks */,
 				6D0F135C1B432976001685BA /* Nimble.framework in Frameworks */,
 				6D0F135D1B432976001685BA /* Quick.framework in Frameworks */,
 				E4E88F93D7A75EAC4C87660F /* libPods-unit_tests.a in Frameworks */,
@@ -815,6 +825,8 @@
 		79646077C042F7DDDC35EBEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A5197F31CC947A00076152C /* Result.framework */,
+				4A5197F41CC947A00076152C /* ReactiveCocoa.framework */,
 				4A9C1DDB1CC912F200E0AFA4 /* CoreLocation.framework */,
 				6D0F135A1B432976001685BA /* Nimble.framework */,
 				6D0F135B1B432976001685BA /* Quick.framework */,
@@ -1049,7 +1061,8 @@
 				4A8163A51CC90D5300279952 /* Sources */,
 				4A8163A61CC90D5300279952 /* Frameworks */,
 				4A8163A71CC90D5300279952 /* Resources */,
-				4A9C1DBE1CC9104200E0AFA4 /* Embed Frameworks */,
+				4A0DD7151CCA62C300E7A451 /* Embed Frameworks */,
+				4A0DD7141CCA61D300E7A451 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1239,12 +1252,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4A0DD7141CCA61D300E7A451 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/Result.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			showEnvVarsInLog = 0;
+		};
 		6D0F13551B4328C2001685BA /* Copy Carthage Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			name = "Copy Carthage Frameworks";
 			outputPaths = (
@@ -1252,6 +1284,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
 		};
 		883ACFFBED71BC7449154F1F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1684,10 +1717,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1710,10 +1739,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1969,6 +1994,10 @@
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.1;
 				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=watchos*]" = "$(PROJECT_DIR)/Carthage/Build/watchOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=watchsimulator*]" = "$(PROJECT_DIR)/Carthage/Build/watchOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;

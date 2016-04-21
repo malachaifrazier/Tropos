@@ -10,8 +10,12 @@
 		46660A27B04F4C7B78A7920F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436D9431497525313B32E225 /* Foundation.framework */; };
 		4A0DD7161CCA62E400E7A451 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A16625A1CCAAAA6002DAD94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1662591CCAAAA6002DAD94 /* Images.xcassets */; };
-		4A2C6F641CC951030071E140 /* GeocodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F631CC951030071E140 /* GeocodeController.swift */; };
-		4A2C6F661CC957B40071E140 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F651CC957B40071E140 /* ForecastController.swift */; };
+		4A2C6F6B1CC963990071E140 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F671CC963540071E140 /* ForecastController.swift */; };
+		4A2C6F6C1CC963990071E140 /* GeocodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F681CC963540071E140 /* GeocodeController.swift */; };
+		4A2C6F6D1CC9639B0071E140 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F671CC963540071E140 /* ForecastController.swift */; };
+		4A2C6F6E1CC9639B0071E140 /* GeocodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F681CC963540071E140 /* GeocodeController.swift */; };
+		4A2C6F6F1CC9659B0071E140 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7A12301CC81F9600363A5C /* CoreLocation.framework */; };
+		4A2C6F701CC965AE0071E140 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DDB1CC912F200E0AFA4 /* CoreLocation.framework */; };
 		4A5197F51CC947A00076152C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F31CC947A00076152C /* Result.framework */; };
 		4A5197F61CC947A00076152C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F41CC947A00076152C /* ReactiveCocoa.framework */; };
 		4A5197F71CC9488C0076152C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5197F41CC947A00076152C /* ReactiveCocoa.framework */; };
@@ -282,8 +286,8 @@
 		449386DA1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		449386DB1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4A1662591CCAAAA6002DAD94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4A2C6F631CC951030071E140 /* GeocodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodeController.swift; sourceTree = "<group>"; };
-		4A2C6F651CC957B40071E140 /* ForecastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastController.swift; sourceTree = "<group>"; };
+		4A2C6F671CC963540071E140 /* ForecastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastController.swift; sourceTree = "<group>"; };
+		4A2C6F681CC963540071E140 /* GeocodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodeController.swift; sourceTree = "<group>"; };
 		4A5197F31CC947A00076152C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		4A5197F41CC947A00076152C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TroposCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -422,6 +426,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2C6F6F1CC9659B0071E140 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +452,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2C6F701CC965AE0071E140 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,8 +497,6 @@
 				C2E44CDC1A3A38A2009CC844 /* TRLocationController.m */,
 				E7A895521AFD11AA0023205B /* TRApplicationController.h */,
 				E7A895531AFD11AA0023205B /* TRApplicationController.m */,
-				4A2C6F651CC957B40071E140 /* ForecastController.swift */,
-				4A2C6F631CC951030071E140 /* GeocodeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -666,6 +670,8 @@
 		4A69873D1CC803E6002D3F87 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A2C6F671CC963540071E140 /* ForecastController.swift */,
+				4A2C6F681CC963540071E140 /* GeocodeController.swift */,
 				4A69873E1CC80414002D3F87 /* SettingsController.swift */,
 				4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */,
 			);
@@ -1433,8 +1439,10 @@
 				4A6987411CC80471002D3F87 /* TroposCore.m in Sources */,
 				4A69875E1CC817D9002D3F87 /* UIColor.swift in Sources */,
 				4A69875F1CC817D9002D3F87 /* NSAttributedString.swift in Sources */,
+				4A2C6F6C1CC963990071E140 /* GeocodeController.swift in Sources */,
 				4A552F601CC7CCFA008C7298 /* PrecipitationChance.swift in Sources */,
 				4A552F631CC7CCFA008C7298 /* WeatherUpdate.swift in Sources */,
+				4A2C6F6B1CC963990071E140 /* ForecastController.swift in Sources */,
 				4A69873F1CC80414002D3F87 /* SettingsController.swift in Sources */,
 				4A552F5D1CC7CCF9008C7298 /* CardinalDirection.swift in Sources */,
 				4A8163971CC9094400279952 /* RelativeDateFormatter.swift in Sources */,
@@ -1492,8 +1500,10 @@
 				4A9C1DC61CC9109300E0AFA4 /* RelativeDateFormatter.swift in Sources */,
 				4A9C1DC71CC9109300E0AFA4 /* TemperatureComparisonFormatter.swift in Sources */,
 				4A9C1DC81CC9109300E0AFA4 /* TemperatureFormatter.swift in Sources */,
+				4A2C6F6E1CC9639B0071E140 /* GeocodeController.swift in Sources */,
 				4A9C1DC91CC9109300E0AFA4 /* WindSpeedFormatter.swift in Sources */,
 				4A9C1DCA1CC9109300E0AFA4 /* CardinalDirection.swift in Sources */,
+				4A2C6F6D1CC9639B0071E140 /* ForecastController.swift in Sources */,
 				4A9C1DCB1CC9109300E0AFA4 /* DailyForecast.swift in Sources */,
 				4A9C1DCC1CC9109300E0AFA4 /* Precipitation.swift in Sources */,
 				4A9C1DCD1CC9109300E0AFA4 /* PrecipitationChance.swift in Sources */,
@@ -1515,10 +1525,8 @@
 				4D7389DF1A9890CD0039F13B /* UIScrollView+TRReactiveCocoa.m in Sources */,
 				4DC069CD1A95B8F800F3BCEB /* TRColorBackdropLayer.m in Sources */,
 				4A8163941CC830A400279952 /* TRSettingsController+TRObservation.m in Sources */,
-				4A2C6F661CC957B40071E140 /* ForecastController.swift in Sources */,
 				4DDF65061AB3AC0C00909D67 /* TRWeatherController.m in Sources */,
 				4ACA584B1CC526D600DD0CDC /* RACSignal+TROperators.m in Sources */,
-				4A2C6F641CC951030071E140 /* GeocodeController.swift in Sources */,
 				4D49554C1A8C298A0066F278 /* TRRefreshView.m in Sources */,
 				C2E44CEF1A3B6E89009CC844 /* NSDate+TRRelativeDate.m in Sources */,
 				4D4937781A82F30D007A1FA9 /* TRLabel.m in Sources */,

@@ -1,12 +1,12 @@
 @import CoreLocation;
 @import TroposCore;
 #import "RACSignal+TROperators.h"
+#import "Secrets.h"
 #import "TRWeatherController.h"
 #import "TRWeatherUpdate+Analytics.h"
 #import "TRLocationController.h"
 #import "TRSettingsController+TRObservation.h"
 #import "TRAnalyticsController.h"
-#import "Tropos-Swift.h"
 
 @interface TRWeatherController ()
 
@@ -34,7 +34,7 @@
 
     self.locationController = [TRLocationController new];
     self.geocodeController = [TRGeocodeController new];
-    self.forecastController = [TRForecastController new];
+    self.forecastController = [[TRForecastController alloc] initWithAPIKey:TRForecastAPIKey];
     self.settingsController = [TRSettingsController new];
     self.unitSystemChanged = [[self.settingsController unitSystemChanged] replayLastLazily];
 

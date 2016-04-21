@@ -1,10 +1,10 @@
 import CoreLocation
 import ReactiveCocoa
 
-@objc(TRGeocodeController) final class GeocodeController: NSObject {
+@objc(TRGeocodeController) public final class GeocodeController: NSObject {
     private let geocoder = CLGeocoder()
 
-    @objc(reverseGeocodeLocation:) func reverseGeocode(location location: CLLocation) -> RACSignal {
+    @objc(reverseGeocodeLocation:) public func reverseGeocode(location location: CLLocation) -> RACSignal {
         return RACSignal.createSignal { [geocoder] subscriber in
             geocoder.reverseGeocodeLocation(location) { placemarks, error in
                 switch (placemarks?.first, error) {

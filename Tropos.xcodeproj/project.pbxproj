@@ -10,6 +10,34 @@
 		46660A27B04F4C7B78A7920F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436D9431497525313B32E225 /* Foundation.framework */; };
 		4A0DD7161CCA62E400E7A451 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A16625A1CCAAAA6002DAD94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1662591CCAAAA6002DAD94 /* Images.xcassets */; };
+		4A0DD71C1CCA798A00E7A451 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71B1CCA798A00E7A451 /* ReactiveCocoa.framework */; };
+		4A0DD71E1CCA798F00E7A451 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71D1CCA798F00E7A451 /* Result.framework */; };
+		4A0DD7201CCA7A2500E7A451 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A0DD7211CCA7A2800E7A451 /* TroposCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; };
+		4A0DD7221CCA7A3500E7A451 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71D1CCA798F00E7A451 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A0DD7231CCA7A3500E7A451 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71B1CCA798A00E7A451 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A0DD7241CCA7B8900E7A451 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71B1CCA798A00E7A451 /* ReactiveCocoa.framework */; };
+		4A0DD7251CCA7B8B00E7A451 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71D1CCA798F00E7A451 /* Result.framework */; };
+		4A0DD7271CCA7BFB00E7A451 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7261CCA7BFB00E7A451 /* Quick.framework */; };
+		4A0DD7291CCA7C1D00E7A451 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7281CCA7C1D00E7A451 /* Nimble.framework */; };
+		4A0DD72A1CCA7C5600E7A451 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7261CCA7BFB00E7A451 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A0DD72B1CCA7C5900E7A451 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7281CCA7C1D00E7A451 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A0DD7301CCA7D7400E7A451 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71B1CCA798A00E7A451 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A0DD7311CCA7D7400E7A451 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71D1CCA798F00E7A451 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A0DD7321CCA7D7E00E7A451 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71B1CCA798A00E7A451 /* ReactiveCocoa.framework */; };
+		4A0DD7331CCA7D7E00E7A451 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71D1CCA798F00E7A451 /* Result.framework */; };
+		4A0DD7351CCA7DB500E7A451 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7281CCA7C1D00E7A451 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A0DD7361CCA7DB500E7A451 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7261CCA7BFB00E7A451 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A0DD7371CCA7DB900E7A451 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7281CCA7C1D00E7A451 /* Nimble.framework */; };
+		4A0DD7381CCA7DB900E7A451 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7261CCA7BFB00E7A451 /* Quick.framework */; };
+		4A0DD7391CCA7DDD00E7A451 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71B1CCA798A00E7A451 /* ReactiveCocoa.framework */; };
+		4A0DD73A1CCA7DE100E7A451 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71D1CCA798F00E7A451 /* Result.framework */; };
+		4A0DD7471CCA7E5C00E7A451 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7451CCA7E5C00E7A451 /* ReactiveCocoa.framework */; };
+		4A0DD7481CCA7E5C00E7A451 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7461CCA7E5C00E7A451 /* Result.framework */; };
+		4A0DD74E1CCA804800E7A451 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7451CCA7E5C00E7A451 /* ReactiveCocoa.framework */; };
+		4A0DD74F1CCA804800E7A451 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7461CCA7E5C00E7A451 /* Result.framework */; };
+		4A0DD7501CCA808C00E7A451 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7451CCA7E5C00E7A451 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A0DD7511CCA808C00E7A451 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7461CCA7E5C00E7A451 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A2C6F6B1CC963990071E140 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F671CC963540071E140 /* ForecastController.swift */; };
 		4A2C6F6C1CC963990071E140 /* GeocodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F681CC963540071E140 /* GeocodeController.swift */; };
 		4A2C6F6D1CC9639B0071E140 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F671CC963540071E140 /* ForecastController.swift */; };
@@ -31,10 +59,6 @@
 		4A552F491CC7CB9B008C7298 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A552F421CC7CB9B008C7298 /* Info.plist */; };
 		4A552F4B1CC7CB9B008C7298 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A552F461CC7CB9B008C7298 /* Info.plist */; };
 		4A552F4D1CC7CBB2008C7298 /* TroposCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A552F431CC7CB9B008C7298 /* TroposCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A552F4F1CC7CC37008C7298 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135B1B432976001685BA /* Quick.framework */; };
-		4A552F501CC7CC39008C7298 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135A1B432976001685BA /* Nimble.framework */; };
-		4A552F521CC7CC54008C7298 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135B1B432976001685BA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4A552F531CC7CC56008C7298 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135A1B432976001685BA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A552F5D1CC7CCF9008C7298 /* CardinalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A552F551CC7CCF9008C7298 /* CardinalDirection.swift */; };
 		4A552F5E1CC7CCFA008C7298 /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A552F561CC7CCF9008C7298 /* DailyForecast.swift */; };
 		4A552F5F1CC7CCFA008C7298 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A552F571CC7CCF9008C7298 /* Precipitation.swift */; };
@@ -107,8 +131,6 @@
 		4A9C1DD81CC910CF00E0AFA4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A552F801CC7D118008C7298 /* Localizable.strings */; };
 		4A9C1DDD1CC9130700E0AFA4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7A12301CC81F9600363A5C /* CoreLocation.framework */; };
 		4AB9C18A1CC8286F006CBC24 /* New York.placemark in Resources */ = {isa = PBXBuildFile; fileRef = 4A552F771CC7D063008C7298 /* New York.placemark */; };
-		4AC287A41CBC3D800064F48A /* Nimble.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135A1B432976001685BA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4AC287A51CBC3D820064F48A /* Quick.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135B1B432976001685BA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4ACA584B1CC526D600DD0CDC /* RACSignal+TROperators.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA584A1CC526D600DD0CDC /* RACSignal+TROperators.m */; };
 		4AEF9F271CC91DD50052A057 /* WatchUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */; };
 		4AEF9F281CC91DD50052A057 /* WatchUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */; };
@@ -131,10 +153,6 @@
 		4DC716601A9B1D5B00BC4BD4 /* TRRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7165F1A9B1D5B00BC4BD4 /* TRRefreshControl.m */; };
 		4DDF65061AB3AC0C00909D67 /* TRWeatherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDF65051AB3AC0C00909D67 /* TRWeatherController.m */; };
 		5DA50AD91A82CAB300CAE666 /* DINNextLTPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5DA50AD81A82CAB300CAE666 /* DINNextLTPro-Light.otf */; };
-		6D0F135C1B432976001685BA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135A1B432976001685BA /* Nimble.framework */; };
-		6D0F135D1B432976001685BA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F135B1B432976001685BA /* Quick.framework */; };
-		6D0F135E1B43298C001685BA /* Nimble.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6D0F135A1B432976001685BA /* Nimble.framework */; };
-		6D0F135F1B43298E001685BA /* Quick.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6D0F135B1B432976001685BA /* Quick.framework */; };
 		7D54C46B9E7FA5B0724FC775 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3068282D6E4B66BB58E93BC /* libPods.a */; };
 		C2E44CE11A3A3C09009CC844 /* TRWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E44CE01A3A3C09009CC844 /* TRWeatherViewController.m */; };
 		C2E44CE41A3A4273009CC844 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2E44CE61A3A4273009CC844 /* Localizable.strings */; };
@@ -165,13 +183,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4A552EEE1CC7C8F8008C7298;
 			remoteInfo = TroposCore;
-		};
-		4A552EFC1CC7C8F8008C7298 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 198EF8739DFBDBC4FBC67D3B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 45ADD324EABFD89F9E640007;
-			remoteInfo = Tropos;
 		};
 		4A552F021CC7C8F8008C7298 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -208,9 +219,23 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 10;
 			files = (
 				4A0DD7161CCA62E400E7A451 /* TroposCore.framework in Embed Frameworks */,
+				4A0DD7501CCA808C00E7A451 /* ReactiveCocoa.framework in Embed Frameworks */,
+				4A0DD7511CCA808C00E7A451 /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0DD7341CCA7D9E00E7A451 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A0DD7351CCA7DB500E7A451 /* Nimble.framework in Embed Frameworks */,
+				4A0DD7361CCA7DB500E7A451 /* Quick.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +247,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4A552F051CC7C8F8008C7298 /* TroposCore.framework in Embed Frameworks */,
+				4A0DD7301CCA7D7400E7A451 /* ReactiveCocoa.framework in Embed Frameworks */,
+				4A0DD7311CCA7D7400E7A451 /* Result.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,8 +259,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4A552F521CC7CC54008C7298 /* Quick.framework in Embed Frameworks */,
-				4A552F531CC7CC56008C7298 /* Nimble.framework in Embed Frameworks */,
+				4A0DD7201CCA7A2500E7A451 /* TroposCore.framework in Embed Frameworks */,
+				4A0DD7221CCA7A3500E7A451 /* Result.framework in Embed Frameworks */,
+				4A0DD7231CCA7A3500E7A451 /* ReactiveCocoa.framework in Embed Frameworks */,
+				4A0DD72B1CCA7C5900E7A451 /* Nimble.framework in Embed Frameworks */,
+				4A0DD72A1CCA7C5600E7A451 /* Quick.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,18 +277,6 @@
 				4A8163AA1CC90D5300279952 /* Watch Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AC287A31CBC3D700064F48A /* Embed Carthage Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4AC287A41CBC3D800064F48A /* Nimble.framework in Embed Carthage Frameworks */,
-				4AC287A51CBC3D820064F48A /* Quick.framework in Embed Carthage Frameworks */,
-			);
-			name = "Embed Carthage Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4AF89FCE1CC7DA2500A56E4B /* Embed Watch Content */ = {
@@ -289,6 +307,12 @@
 		449386DA1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		449386DB1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4A1662591CCAAAA6002DAD94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A0DD71B1CCA798A00E7A451 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0DD71D1CCA798F00E7A451 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0DD7261CCA7BFB00E7A451 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0DD7281CCA7C1D00E7A451 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0DD7451CCA7E5C00E7A451 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0DD7461CCA7E5C00E7A451 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2C6F671CC963540071E140 /* ForecastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastController.swift; sourceTree = "<group>"; };
 		4A2C6F681CC963540071E140 /* GeocodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodeController.swift; sourceTree = "<group>"; };
 		4A2C6F711CC966360071E140 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
@@ -397,8 +421,6 @@
 		5DA50AD81A82CAB300CAE666 /* DINNextLTPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Light.otf"; sourceTree = "<group>"; };
 		650F157E1B3DD256004B01B2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65685FF21B3D299C0054BA1A /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6D0F135A1B432976001685BA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		6D0F135B1B432976001685BA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		986C425E5A2268D27FAE2FAA /* Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		A6B1ADBC73A8A2EF7FB4E257 /* TRAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
 		B1E75D271B6E8ADC007B03F9 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -427,6 +449,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0DD71E1CCA798F00E7A451 /* Result.framework in Frameworks */,
+				4A0DD71C1CCA798A00E7A451 /* ReactiveCocoa.framework in Frameworks */,
 				4A2C6F6F1CC9659B0071E140 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,9 +459,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A552EF91CC7C8F8008C7298 /* TroposCore.framework in Frameworks */,
-				4A552F4F1CC7CC37008C7298 /* Quick.framework in Frameworks */,
-				4A552F501CC7CC39008C7298 /* Nimble.framework in Frameworks */,
+				4A0DD7291CCA7C1D00E7A451 /* Nimble.framework in Frameworks */,
+				4A0DD7271CCA7BFB00E7A451 /* Quick.framework in Frameworks */,
+				4A0DD7211CCA7A2800E7A451 /* TroposCore.framework in Frameworks */,
+				4A0DD7241CCA7B8900E7A451 /* ReactiveCocoa.framework in Frameworks */,
+				4A0DD7251CCA7B8B00E7A451 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +471,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0DD7471CCA7E5C00E7A451 /* ReactiveCocoa.framework in Frameworks */,
+				4A0DD7481CCA7E5C00E7A451 /* Result.framework in Frameworks */,
 				4A9C1DB91CC9104200E0AFA4 /* TroposCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +482,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2C6F701CC965AE0071E140 /* CoreLocation.framework in Frameworks */,
+				4A0DD74E1CCA804800E7A451 /* ReactiveCocoa.framework in Frameworks */,
+				4A0DD74F1CCA804800E7A451 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,10 +492,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9C1DDD1CC9130700E0AFA4 /* CoreLocation.framework in Frameworks */,
-				4A5197F61CC947A00076152C /* ReactiveCocoa.framework in Frameworks */,
 				46660A27B04F4C7B78A7920F /* Foundation.framework in Frameworks */,
-				4A5197F51CC947A00076152C /* Result.framework in Frameworks */,
 				4A552F041CC7C8F8008C7298 /* TroposCore.framework in Frameworks */,
+				4A0DD7321CCA7D7E00E7A451 /* ReactiveCocoa.framework in Frameworks */,
+				4A0DD7331CCA7D7E00E7A451 /* Result.framework in Frameworks */,
 				7D54C46B9E7FA5B0724FC775 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,11 +504,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0DD73A1CCA7DE100E7A451 /* Result.framework in Frameworks */,
+				4A0DD7391CCA7DDD00E7A451 /* ReactiveCocoa.framework in Frameworks */,
+				4A0DD7371CCA7DB900E7A451 /* Nimble.framework in Frameworks */,
+				4A0DD7381CCA7DB900E7A451 /* Quick.framework in Frameworks */,
 				4A2C6F781CC977FF0071E140 /* TroposCore.framework in Frameworks */,
-				4A5197F71CC9488C0076152C /* ReactiveCocoa.framework in Frameworks */,
-				4A5197F81CC948910076152C /* Result.framework in Frameworks */,
-				6D0F135C1B432976001685BA /* Nimble.framework in Frameworks */,
-				6D0F135D1B432976001685BA /* Quick.framework in Frameworks */,
 				E4E88F93D7A75EAC4C87660F /* libPods-unit_tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +589,16 @@
 			children = (
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		4A0DD71F1CCA79CD00E7A451 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				4A0DD7451CCA7E5C00E7A451 /* ReactiveCocoa.framework */,
+				4A0DD7461CCA7E5C00E7A451 /* Result.framework */,
+				4A9C1DDB1CC912F200E0AFA4 /* CoreLocation.framework */,
+			);
+			name = watchOS;
 			sourceTree = "<group>";
 		};
 		4A552EF01CC7C8F8008C7298 /* Core */ = {
@@ -829,14 +869,8 @@
 		79646077C042F7DDDC35EBEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A5197F31CC947A00076152C /* Result.framework */,
-				4A5197F41CC947A00076152C /* ReactiveCocoa.framework */,
-				4A9C1DDB1CC912F200E0AFA4 /* CoreLocation.framework */,
-				6D0F135A1B432976001685BA /* Nimble.framework */,
-				6D0F135B1B432976001685BA /* Quick.framework */,
 				AFACA54B2AA00A57E3FA59D1 /* iOS */,
-				B3068282D6E4B66BB58E93BC /* libPods.a */,
-				2077A81F4D138B4F5693A546 /* libPods-unit_tests.a */,
+				4A0DD71F1CCA79CD00E7A451 /* watchOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -852,8 +886,14 @@
 		AFACA54B2AA00A57E3FA59D1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2077A81F4D138B4F5693A546 /* libPods-unit_tests.a */,
+				B3068282D6E4B66BB58E93BC /* libPods.a */,
 				4A7A12301CC81F9600363A5C /* CoreLocation.framework */,
 				436D9431497525313B32E225 /* Foundation.framework */,
+				4A0DD7281CCA7C1D00E7A451 /* Nimble.framework */,
+				4A0DD7261CCA7BFB00E7A451 /* Quick.framework */,
+				4A0DD71B1CCA798A00E7A451 /* ReactiveCocoa.framework */,
+				4A0DD71D1CCA798F00E7A451 /* Result.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -985,7 +1025,6 @@
 				B426E4C5542F07A66A70065A /* Copy Pods Resources */,
 				C247D7F61A5F07A00032F747 /* Update Build Number */,
 				C2422E4B1A718BC800F72769 /* Hockey Run Script */,
-				6D0F13551B4328C2001685BA /* Copy Carthage Frameworks */,
 				E9D11CFCA967ADDF3B704D82 /* Embed Pods Frameworks */,
 				4A552F091CC7C8F8008C7298 /* Embed Frameworks */,
 				4AF89FCE1CC7DA2500A56E4B /* Embed Watch Content */,
@@ -1032,7 +1071,6 @@
 			);
 			dependencies = (
 				4A552EFB1CC7C8F8008C7298 /* PBXTargetDependency */,
-				4A552EFD1CC7C8F8008C7298 /* PBXTargetDependency */,
 			);
 			name = "TroposCoreSpecs-iOS";
 			productName = TroposCoreTests;
@@ -1064,7 +1102,6 @@
 				4A8163A61CC90D5300279952 /* Frameworks */,
 				4A8163A71CC90D5300279952 /* Resources */,
 				4A0DD7151CCA62C300E7A451 /* Embed Frameworks */,
-				4A0DD7141CCA61D300E7A451 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1104,7 +1141,7 @@
 				00C863EF3E2818AC40D913B2 /* Resources */,
 				8F9F0DB6E8093C9DBBB49EE4 /* Copy Pods Resources */,
 				F3BBACD8FBEEC6C8B841A0EC /* Embed Pods Frameworks */,
-				4AC287A31CBC3D700064F48A /* Embed Carthage Frameworks */,
+				4A0DD7341CCA7D9E00E7A451 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1188,8 +1225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D0F135E1B43298C001685BA /* Nimble.framework in Resources */,
-				6D0F135F1B43298E001685BA /* Quick.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1254,40 +1289,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A0DD7141CCA61D300E7A451 /* Copy Carthage Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/watchOS/ReactiveCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/watchOS/Result.framework",
-			);
-			name = "Copy Carthage Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-			showEnvVarsInLog = 0;
-		};
-		6D0F13551B4328C2001685BA /* Copy Carthage Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-			);
-			name = "Copy Carthage Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-			showEnvVarsInLog = 0;
-		};
 		883ACFFBED71BC7449154F1F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1568,11 +1569,6 @@
 			isa = PBXTargetDependency;
 			target = 4A552EEE1CC7C8F8008C7298 /* TroposCore-iOS */;
 			targetProxy = 4A552EFA1CC7C8F8008C7298 /* PBXContainerItemProxy */;
-		};
-		4A552EFD1CC7C8F8008C7298 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 45ADD324EABFD89F9E640007 /* Tropos */;
-			targetProxy = 4A552EFC1CC7C8F8008C7298 /* PBXContainerItemProxy */;
 		};
 		4A552F031CC7C8F8008C7298 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2000,10 +1996,6 @@
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.1;
 				ENABLE_TESTABILITY = YES;
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				"FRAMEWORK_SEARCH_PATHS[sdk=watchos*]" = "$(PROJECT_DIR)/Carthage/Build/watchOS";
-				"FRAMEWORK_SEARCH_PATHS[sdk=watchsimulator*]" = "$(PROJECT_DIR)/Carthage/Build/watchOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2130,10 +2122,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					EXP_SHORTHAND,
@@ -2159,10 +2147,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "Tropos/Specs/Resources/UnitTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.${PRODUCT_NAME:rfc1034identifier}";

@@ -286,7 +286,7 @@
 		65685FF21B3D299C0054BA1A /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6D0F135A1B432976001685BA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		6D0F135B1B432976001685BA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		986C425E5A2268D27FAE2FAA /* Tropos-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tropos-Prefix.pch"; sourceTree = "<group>"; };
+		986C425E5A2268D27FAE2FAA /* Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		A6B1ADBC73A8A2EF7FB4E257 /* TRAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
 		B1E75D271B6E8ADC007B03F9 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1E75D281B6E8ADC007B03F9 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -409,8 +409,9 @@
 		3BE8FEB37F8EAA83D075A253 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				E7B3B9281B34EE0500BDD5A4 /* Controllers */,
 				7B05273CCDF63C9DA71C049A /* Resources */,
-				D487E2F8148F4F831FE4B216 /* Tests */,
+				4A0DD7531CCA97BB00E7A451 /* Support */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -423,6 +424,13 @@
 				301CF0A99B4C5FAECDB23D75 /* Resources */,
 			);
 			path = Tropos;
+			sourceTree = "<group>";
+		};
+		4A0DD7531CCA97BB00E7A451 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		4A552EF01CC7C8F8008C7298 /* Core */ = {
@@ -685,8 +693,6 @@
 			isa = PBXGroup;
 			children = (
 				1CDD2312F1EF05277F045E15 /* Info.plist */,
-				986C425E5A2268D27FAE2FAA /* Tropos-Prefix.pch */,
-				2853082980109C89B8F07D3C /* main.m */,
 				C2E44CE61A3A4273009CC844 /* Localizable.strings */,
 				C2E44CEB1A3A42C6009CC844 /* InfoPlist.strings */,
 				4D9CA35E1A5CABDD009E24DD /* Settings.bundle */,
@@ -717,14 +723,6 @@
 			tabWidth = 4;
 			usesTabs = 0;
 		};
-		D487E2F8148F4F831FE4B216 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E7B3B9281B34EE0500BDD5A4 /* Controllers */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		E4F796A1BFA14961F3C5EE5E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -735,7 +733,9 @@
 				C2E44CDE1A3A3BFB009CC844 /* ViewControllers */,
 				639AAB142C96B59FC995CA1D /* Views */,
 				4A6987441CC80699002D3F87 /* Bridging-Header.h */,
+				986C425E5A2268D27FAE2FAA /* Prefix.pch */,
 				22FE01C01AF3F5550085B494 /* Secrets.h */,
+				2853082980109C89B8F07D3C /* main.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1424,7 +1424,7 @@
 				DSTROOT = /tmp/xcodeproj.dst;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tropos/Resources/Other-Sources/Tropos-Prefix.pch";
+				GCC_PREFIX_HEADER = Tropos/Sources/Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Tropos/Resources/Other-Sources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1517,7 +1517,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tropos/Resources/Other-Sources/Tropos-Prefix.pch";
+				GCC_PREFIX_HEADER = Tropos/Sources/Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",

@@ -415,13 +415,13 @@
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
-		4A552EF01CC7C8F8008C7298 /* TroposCore */ = {
+		4A552EF01CC7C8F8008C7298 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				4A552F401CC7CB9B008C7298 /* Sources */,
 				4A552F441CC7CB9B008C7298 /* Specs */,
 			);
-			path = TroposCore;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		4A552F401CC7CB9B008C7298 /* Sources */ = {
@@ -699,7 +699,7 @@
 				E4F796A1BFA14961F3C5EE5E /* Tropos */,
 				3BE8FEB37F8EAA83D075A253 /* UnitTests */,
 				301CF0A99B4C5FAECDB23D75 /* Resources */,
-				4A552EF01CC7C8F8008C7298 /* TroposCore */,
+				4A552EF01CC7C8F8008C7298 /* Core */,
 				79646077C042F7DDDC35EBEA /* Frameworks */,
 				702F42EA5C215DCFAE2AAC5C /* Products */,
 				21DDD3911F58296F86C19011 /* Pods */,

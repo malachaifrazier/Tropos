@@ -9,8 +9,7 @@ import Result
         locationManager = CLLocationManager()
         super.init()
         locationManager.delegate = self
-        locationManager.distanceFilter = kCLDistanceFilterNone
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
     }
 
     public var requestAlwaysAuthorization: SignalProducer<Bool, NoError> {
@@ -36,7 +35,7 @@ import Result
 
         return SignalProducer.unify(producers: [currentLocationUpdated, locationUpdateFailed])
             .takeLast(1)
-            .on(started: locationManager.requestLocation)
+            .on(started: locationManager.requestLocation, terminated: locationManager.stopUpdatingLocation)
     }
 
     public func authorizationStatusEqualTo(status: CLAuthorizationStatus) -> Bool {

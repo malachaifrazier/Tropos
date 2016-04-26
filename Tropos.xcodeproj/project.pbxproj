@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		46660A27B04F4C7B78A7920F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436D9431497525313B32E225 /* Foundation.framework */; };
 		4A0DD7161CCA62E400E7A451 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C1DB21CC9104200E0AFA4 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4A16625A1CCAAAA6002DAD94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1662591CCAAAA6002DAD94 /* Images.xcassets */; };
 		4A0DD71C1CCA798A00E7A451 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71B1CCA798A00E7A451 /* ReactiveCocoa.framework */; };
 		4A0DD71E1CCA798F00E7A451 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD71D1CCA798F00E7A451 /* Result.framework */; };
 		4A0DD7201CCA7A2500E7A451 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -38,6 +37,7 @@
 		4A0DD74F1CCA804800E7A451 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7461CCA7E5C00E7A451 /* Result.framework */; };
 		4A0DD7501CCA808C00E7A451 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7451CCA7E5C00E7A451 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A0DD7511CCA808C00E7A451 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0DD7461CCA7E5C00E7A451 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A16625A1CCAAAA6002DAD94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1662591CCAAAA6002DAD94 /* Images.xcassets */; };
 		4A2C6F6B1CC963990071E140 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F671CC963540071E140 /* ForecastController.swift */; };
 		4A2C6F6C1CC963990071E140 /* GeocodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F681CC963540071E140 /* GeocodeController.swift */; };
 		4A2C6F6D1CC9639B0071E140 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C6F671CC963540071E140 /* ForecastController.swift */; };
@@ -75,6 +75,8 @@
 		4A552F7A1CC7D06F008C7298 /* TestPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A552F791CC7D06F008C7298 /* TestPlacemark.swift */; };
 		4A552F861CC7D1A4008C7298 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A552F851CC7D1A4008C7298 /* NSBundle.swift */; };
 		4A552F881CC7D20D008C7298 /* NSLocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A552F871CC7D20D008C7298 /* NSLocalizedString.swift */; };
+		4A6735D11CCABA33009D16CD /* WeatherUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6735D01CCABA33009D16CD /* WeatherUpdater.swift */; };
+		4A6735D21CCABA33009D16CD /* WeatherUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6735D01CCABA33009D16CD /* WeatherUpdater.swift */; };
 		4A69873F1CC80414002D3F87 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69873E1CC80414002D3F87 /* SettingsController.swift */; };
 		4A6987411CC80471002D3F87 /* TroposCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987401CC80471002D3F87 /* TroposCore.m */; };
 		4A6987431CC804FE002D3F87 /* UnitSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987421CC804FE002D3F87 /* UnitSystem.swift */; };
@@ -91,6 +93,7 @@
 		4A7A12361CC8219600363A5C /* TemperatureFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A12341CC8219600363A5C /* TemperatureFormatterSpec.swift */; };
 		4A7A12391CC821DA00363A5C /* DailyForecastViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A12381CC821DA00363A5C /* DailyForecastViewModelSpec.swift */; };
 		4A7A123B1CC8223F00363A5C /* NSDate+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A123A1CC8223F00363A5C /* NSDate+ISO8601.swift */; };
+		4A7AC44F1CCFFB67008532FD /* WKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AC44E1CCFFB67008532FD /* WKExtension.swift */; };
 		4A8163921CC82B4D00279952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8163911CC82B4D00279952 /* Images.xcassets */; };
 		4A8163931CC82D5100279952 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A552F801CC7D118008C7298 /* Localizable.strings */; };
 		4A8163941CC830A400279952 /* TRSettingsController+TRObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6987681CC81D20002D3F87 /* TRSettingsController+TRObservation.m */; };
@@ -308,13 +311,13 @@
 		436D9431497525313B32E225 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		449386DA1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		449386DB1B5044EE00766EC9 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		4A1662591CCAAAA6002DAD94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A0DD71B1CCA798A00E7A451 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0DD71D1CCA798F00E7A451 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0DD7261CCA7BFB00E7A451 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0DD7281CCA7C1D00E7A451 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0DD7451CCA7E5C00E7A451 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0DD7461CCA7E5C00E7A451 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A1662591CCAAAA6002DAD94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A2C6F671CC963540071E140 /* ForecastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastController.swift; sourceTree = "<group>"; };
 		4A2C6F681CC963540071E140 /* GeocodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodeController.swift; sourceTree = "<group>"; };
 		4A2C6F711CC966360071E140 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
@@ -347,6 +350,7 @@
 		4A552F831CC7D123008C7298 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4A552F851CC7D1A4008C7298 /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
 		4A552F871CC7D20D008C7298 /* NSLocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLocalizedString.swift; sourceTree = "<group>"; };
+		4A6735D01CCABA33009D16CD /* WeatherUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherUpdater.swift; sourceTree = "<group>"; };
 		4A69873E1CC80414002D3F87 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		4A6987401CC80471002D3F87 /* TroposCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TroposCore.m; sourceTree = "<group>"; };
 		4A6987421CC804FE002D3F87 /* UnitSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSystem.swift; sourceTree = "<group>"; };
@@ -373,6 +377,7 @@
 		4A7A12341CC8219600363A5C /* TemperatureFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureFormatterSpec.swift; sourceTree = "<group>"; };
 		4A7A12381CC821DA00363A5C /* DailyForecastViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyForecastViewModelSpec.swift; sourceTree = "<group>"; };
 		4A7A123A1CC8223F00363A5C /* NSDate+ISO8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+ISO8601.swift"; sourceTree = "<group>"; };
+		4A7AC44E1CCFFB67008532FD /* WKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKExtension.swift; sourceTree = "<group>"; };
 		4A8163911CC82B4D00279952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A81639D1CC90D5200279952 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8163A91CC90D5300279952 /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -577,6 +582,16 @@
 			path = Specs;
 			sourceTree = "<group>";
 		};
+		4A0DD71F1CCA79CD00E7A451 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				4A0DD7451CCA7E5C00E7A451 /* ReactiveCocoa.framework */,
+				4A0DD7461CCA7E5C00E7A451 /* Result.framework */,
+				4A9C1DDB1CC912F200E0AFA4 /* CoreLocation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
 		4A0DD7521CCA968500E7A451 /* Tropos */ = {
 			isa = PBXGroup;
 			children = (
@@ -592,16 +607,6 @@
 			children = (
 			);
 			path = Support;
-			sourceTree = "<group>";
-		};
-		4A0DD71F1CCA79CD00E7A451 /* watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				4A0DD7451CCA7E5C00E7A451 /* ReactiveCocoa.framework */,
-				4A0DD7461CCA7E5C00E7A451 /* Result.framework */,
-				4A9C1DDB1CC912F200E0AFA4 /* CoreLocation.framework */,
-			);
-			name = watchOS;
 			sourceTree = "<group>";
 		};
 		4A552EF01CC7C8F8008C7298 /* Core */ = {
@@ -720,6 +725,7 @@
 				4A2C6F711CC966360071E140 /* LocationController.swift */,
 				4A69873E1CC80414002D3F87 /* SettingsController.swift */,
 				4AEF9F251CC91DD00052A057 /* WatchUpdateController.swift */,
+				4A6735D01CCABA33009D16CD /* WeatherUpdater.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -778,6 +784,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		4A7AC44D1CCFFB56008532FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A7AC44E1CCFFB67008532FD /* WKExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4AF89FAD1CC7DA2500A56E4B /* Watch */ = {
 			isa = PBXGroup;
 			children = (
@@ -800,6 +814,7 @@
 		4AF89FD71CC7DAE900A56E4B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4A7AC44D1CCFFB56008532FD /* Extensions */,
 				4A8163C11CC90DC800279952 /* ExtensionDelegate.swift */,
 				4A8163BF1CC90DC800279952 /* InterfaceController.swift */,
 				4A8163C01CC90DC800279952 /* Info.plist */,
@@ -1456,6 +1471,7 @@
 				4A552F861CC7D1A4008C7298 /* NSBundle.swift in Sources */,
 				4A6987581CC81698002D3F87 /* DailyForecastViewModel.swift in Sources */,
 				4A69875D1CC817D9002D3F87 /* UIFont.swift in Sources */,
+				4A6735D11CCABA33009D16CD /* WeatherUpdater.swift in Sources */,
 				4A552F611CC7CCFA008C7298 /* Temperature.swift in Sources */,
 				4A552F5F1CC7CCFA008C7298 /* Precipitation.swift in Sources */,
 				4A552F881CC7D20D008C7298 /* NSLocalizedString.swift in Sources */,
@@ -1488,6 +1504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8163C91CC90DF000279952 /* ExtensionDelegate.swift in Sources */,
+				4A7AC44F1CCFFB67008532FD /* WKExtension.swift in Sources */,
 				4A8163CA1CC90DF000279952 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1520,6 +1537,7 @@
 				4A2C6F771CC9730F0071E140 /* LocationController.swift in Sources */,
 				4A9C1DCE1CC9109300E0AFA4 /* Temperature.swift in Sources */,
 				4A9C1DCF1CC9109300E0AFA4 /* TimeOfDay.swift in Sources */,
+				4A6735D21CCABA33009D16CD /* WeatherUpdater.swift in Sources */,
 				4A9C1DD01CC9109300E0AFA4 /* UnitSystem.swift in Sources */,
 				4A9C1DD11CC9109300E0AFA4 /* WeatherUpdate.swift in Sources */,
 				4A9C1DD21CC9109300E0AFA4 /* WeatherUpdateCache.swift in Sources */,
@@ -1780,6 +1798,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tropos/Sources/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 			};
@@ -1806,6 +1825,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tropos/Sources/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;

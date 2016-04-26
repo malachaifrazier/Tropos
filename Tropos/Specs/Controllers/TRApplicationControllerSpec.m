@@ -13,12 +13,6 @@
 
 @end
 
-@interface TRWeatherController (Tests)
-
-@property (nonatomic) RACCommand *updateWeatherCommand;
-
-@end
-
 QuickSpecBegin(TRApplicationControllerSpec)
 
 TRLocationController* (^locationControllerWithAuthorizationStatusAuthorizedAlwaysEqualTo) (BOOL) = ^TRLocationController* (BOOL enabled){
@@ -47,18 +41,6 @@ describe(@"TRApplicationController", ^{
             [applicationController setMinimumBackgroundFetchIntervalForApplication:application];
 
             OCMVerify([application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalNever]);
-        });
-    });
-
-    describe(@"performBackgroundFetch:", ^{
-        it(@"executes the weatherControllers's updateWeatherCommand", ^{
-            RACCommand *updateWeatherCommand = OCMClassMock([RACCommand class]);
-            TRApplicationController *applicationController = [TRApplicationController new];
-            applicationController.weatherController.updateWeatherCommand = updateWeatherCommand;
-
-            [applicationController performBackgroundFetch];
-
-            OCMVerify([updateWeatherCommand execute:applicationController]);
         });
     });
 });

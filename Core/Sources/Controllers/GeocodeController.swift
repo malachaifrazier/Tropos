@@ -1,24 +1,24 @@
 import CoreLocation
 import ReactiveCocoa
 
-@objc(TRGeocodeController) public final class GeocodeController: NSObject {
+final class GeocodeController {
     private let geocoder = CLGeocoder()
 
-    @objc(reverseGeocodeLocation:) public func reverseGeocode(location location: CLLocation) -> RACSignal {
-        return RACSignal.createSignal { [geocoder] subscriber in
+    func reverseGeocode(location location: CLLocation) -> SignalProducer<CLPlacemark, NSError> {
+        return SignalProducer { [geocoder] observer, disposable in
             geocoder.reverseGeocodeLocation(location) { placemarks, error in
                 switch (placemarks?.first, error) {
                 case let (placemark?, nil):
-                    subscriber.sendNext(placemark)
-                    subscriber.sendCompleted()
+                    observer.sendNext(placemark)
+                    observer.sendCompleted()
                 case let (nil, error?):
-                    subscriber.sendError(error)
+                    observer.sendFailed(error)
                 default:
-                    subscriber.sendCompleted()
+                    observer.sendCompleted()
                 }
             }
 
-            return RACDisposable(block: geocoder.cancelGeocode)
+            disposable.addDisposable(geocoder.cancelGeocode)
         }
     }
 }

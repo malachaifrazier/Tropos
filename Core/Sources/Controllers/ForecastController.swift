@@ -1,53 +1,50 @@
 import CoreLocation
 import Foundation
 import ReactiveCocoa
+import Result
 
 private let forecastAPIExclusions = "minutely,hourly,alerts,flags"
 
-@objc(TRForecastController) public final class ForecastController: NSObject {
+final class ForecastController {
     private let APIKey: String
     private let session: NSURLSession
 
-    public init(APIKey: String, session: NSURLSession) {
+    init(APIKey: String, session: NSURLSession) {
         self.APIKey = APIKey
         self.session = session
     }
 
-    public convenience init(APIKey: String) {
+    convenience init(APIKey: String) {
         let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
         configuration.HTTPAdditionalHeaders = ["Accept": "application/json"]
         configuration.requestCachePolicy = .ReloadIgnoringLocalCacheData
         self.init(APIKey: APIKey, session: NSURLSession(configuration: configuration))
     }
 
-    public func fetchWeatherUpdate(forPlacemark placemark: CLPlacemark) -> RACSignal {
+    func fetchWeatherUpdate(forPlacemark placemark: CLPlacemark) -> SignalProducer<WeatherUpdate, NSError> {
         let coordinate = placemark.location!.coordinate
 
-        let conditionsURL = URLForCurrentConditions(atLatitude: coordinate.latitude, longitude: coordinate.longitude, yesterday: false)
-        let yesterdaysConditionsURL = URLForCurrentConditions(atLatitude: coordinate.latitude, longitude: coordinate.longitude, yesterday: true)
+        let conditions = fetchConditions(fromURL: URLForCurrentConditions(atLatitude: coordinate.latitude, longitude: coordinate.longitude, yesterday: false))
+        let yesterdaysConditions = fetchConditions(fromURL: URLForCurrentConditions(atLatitude: coordinate.latitude, longitude: coordinate.longitude, yesterday: true))
 
-        return RACSignal
-            .combineLatest([
-                fetchConditions(fromURL: conditionsURL),
-                fetchConditions(fromURL: yesterdaysConditionsURL),
-            ])
-            .map {
-                let results = $0 as! RACTuple
-                return WeatherUpdate(
-                    placemark: placemark,
-                    currentConditionsJSON: results.first as! [String: AnyObject],
-                    yesterdaysConditionsJSON: results.second as! [String: AnyObject]
-                )
+        return conditions.combineLatestWith(yesterdaysConditions)
+            .flatMap(.Merge) { today, yesterday -> SignalProducer<WeatherUpdate, NSError> in
+                if let update = WeatherUpdate(placemark: placemark, currentConditionsJSON: today, yesterdaysConditionsJSON: yesterday) {
+                    return SignalProducer(value: update)
+                } else {
+                    let error = NSError(domain: TRErrorDomain, code: 201, userInfo: nil)
+                    return SignalProducer(error: error)
+                }
             }
-            .deliverOnMainThread()
+            .observeOn(UIScheduler())
     }
 }
 
 private extension ForecastController {
-    func fetchConditions(fromURL URL: NSURL) -> RACSignal {
-        return session.fetchData(fromURL: URL).flattenMap { data in
-            parseJSON(fromData: data as! NSData)
-        }
+    func fetchConditions(fromURL URL: NSURL) -> SignalProducer<[String: AnyObject], NSError> {
+        return session.fetchData(fromURL: URL)
+            .flatMap(.Merge, transform: parseJSON)
+            .map { $0 as! [String: AnyObject] }
     }
 
     func URLForCurrentConditions(atLatitude latitude: Double, longitude: Double, yesterday: Bool) -> NSURL {
@@ -72,43 +69,25 @@ private extension ForecastController {
     }
 }
 
-private func parseJSON(fromData data: NSData) -> RACSignal {
-    return RACSignal.createSignal { subscriber in
-        do {
-            let JSON = try NSJSONSerialization.JSONObjectWithData(data, options: [])
-            subscriber.sendNext(JSON)
-            subscriber.sendCompleted()
-        } catch let error as NSError {
-            subscriber.sendError(error)
-        }
-
-        return nil
+private func parseJSON(fromData data: NSData) -> SignalProducer<AnyObject, NSError> {
+    func parse() -> Result<AnyObject, NSError> {
+        return Result(try NSJSONSerialization.JSONObjectWithData(data, options: []))
     }
+
+    return .attempt(parse)
 }
 
 private extension NSURLSession {
-    func fetchData(fromURL URL: NSURL) -> RACSignal {
-        return RACSignal.createSignal { subscriber in
-            let task = self.dataTaskWithURL(URL) { data, response, error in
-                if error != nil {
-                    subscriber.sendError(error)
-                    return
-                }
-
-                if !responseContainsSuccessfulStatusCode(response as! NSHTTPURLResponse) {
+    func fetchData(fromURL URL: NSURL) -> SignalProducer<NSData, NSError> {
+        return rac_dataWithRequest(NSURLRequest(URL: URL))
+            .flatMap(.Merge) { data, response -> SignalProducer<NSData, NSError> in
+                if responseContainsSuccessfulStatusCode(response as! NSHTTPURLResponse) {
+                    return SignalProducer(value: data)
+                } else {
                     let error = NSError(domain: TRErrorDomain, code: 200, userInfo: nil)
-                    subscriber.sendError(error)
-                    return
+                    return SignalProducer(error: error)
                 }
-
-                subscriber.sendNext(data)
-                subscriber.sendCompleted()
             }
-
-            task.resume()
-
-            return RACDisposable(block: task.cancel)
-        }
     }
 }
 

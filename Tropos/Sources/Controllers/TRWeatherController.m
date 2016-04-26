@@ -9,11 +9,8 @@
 
 @interface TRWeatherController ()
 
-@property (nonatomic, readwrite) RACCommand *updateWeatherCommand;
+@property (nonatomic) TRWeatherUpdater *weatherUpdater;
 
-@property (nonatomic) TRLocationController *locationController;
-@property (nonatomic) TRGeocodeController *geocodeController;
-@property (nonatomic) TRForecastController *forecastController;
 @property (nonatomic) TRSettingsController *settingsController;
 @property (nonatomic) RACSignal *unitSystemChanged;
 
@@ -31,23 +28,9 @@
     self = [super init];
     if (!self) return nil;
 
-    self.locationController = [TRLocationController new];
-    self.geocodeController = [TRGeocodeController new];
-    self.forecastController = [[TRForecastController alloc] initWithAPIKey:TRForecastAPIKey];
+    self.weatherUpdater = [[TRWeatherUpdater alloc] initWithForecastAPIKey:TRForecastAPIKey];
     self.settingsController = [TRSettingsController new];
     self.unitSystemChanged = [[self.settingsController unitSystemChanged] replayLastLazily];
-
-    @weakify(self)
-    self.updateWeatherCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-        @strongify(self)
-        return [[[[self.locationController requestAlwaysAuthorization] then:^RACSignal *{
-            return [self.locationController updateCurrentLocation];
-        }] flattenMap:^RACStream *(CLLocation *location) {
-            return [self.geocodeController reverseGeocodeLocation:location];
-        }] flattenMap:^RACStream *(CLPlacemark *placemark) {
-            return [self.forecastController fetchWeatherUpdateForPlacemark:placemark];
-        }];
-    }];
 
     RAC(self, viewModel) = [[self latestWeatherUpdates] map:^id(TRWeatherUpdate *update) {
         return [[TRWeatherViewModel alloc] initWithWeatherUpdate:update];
@@ -64,6 +47,11 @@
     }];
 
     return self;
+}
+
+- (RACCommand *)updateWeatherCommand
+{
+    return self.weatherUpdater.command;
 }
 
 - (RACSignal *)latestWeatherUpdates

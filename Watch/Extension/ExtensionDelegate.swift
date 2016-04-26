@@ -1,16 +1,48 @@
+import ReactiveCocoa
+import Result
 import TroposCore
 import WatchConnectivity
 import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
-    func applicationDidFinishLaunching() {
-        WatchUpdateController.defaultController?.activateSession(delegate: self)
+    private var applicationContexts: Signal<[String: AnyObject], NoError>!
+    private var weatherUpdater: WeatherUpdater!
+
+    var allWeatherUpdates: Signal<WeatherUpdate, NoError> {
+        return Signal.merge([weatherUpdater.weatherUpdates, iphoneWeatherUpdates])
     }
 
-    func session(session: WCSession, didReceiveApplicationContext applicationContext: [String: AnyObject]) {
-        guard let update = WatchUpdateController.defaultController?.unpackWeatherUpdate(fromContext: applicationContext) else { return }
+    private var iphoneWeatherUpdates: Signal<WeatherUpdate, NoError> {
+        return applicationContexts
+            .map {
+                WatchUpdateController.defaultController?.unpackWeatherUpdate(fromContext: $0)
+            }
+            .ignoreNil()
+    }
+
+    func applicationDidFinishLaunching() {
+        WatchUpdateController.defaultController?.activateSession(delegate: self)
+
+        rac_signalForSelector(#selector(WCSessionDelegate.session(_:didReceiveApplicationContext:)))
+            .toSignalProducer()
+            .flatMapError { _ in .empty }
+            .map { ($0 as! RACTuple).second as! [String: AnyObject] }
+            .startWithSignal { signal, _ in
+                applicationContexts = signal
+            }
+
+        weatherUpdater = WeatherUpdater(forecastAPIKey: TRForecastAPIKey)
+        weatherUpdater.weatherUpdates.observeNext(cacheWeatherUpdate)
+        weatherUpdater.errors.observeNext { print("WEATHER UPDATE FAILED:", $0) }
+    }
+
+    func applicationDidBecomeActive() {
+        weatherUpdater.update()
+    }
+}
+
+private extension ExtensionDelegate {
+    func cacheWeatherUpdate(update: WeatherUpdate) {
         WeatherUpdateCache().archiveWeatherUpdate(update)
-        let interface = WKExtension.sharedExtension().rootInterfaceController as! InterfaceController
-        interface.setWeatherUpdate(update)
     }
 }

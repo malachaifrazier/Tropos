@@ -13,35 +13,30 @@ import Result
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
 
-    public var requestAlwaysAuthorization: RACSignal {
-        return RACSignal.`defer` {
+    public var requestAlwaysAuthorization: SignalProducer<Bool, NoError> {
+        return SignalProducer { observer, disposable in
             if self.needsAuthorization {
                 self.locationManager.requestAlwaysAuthorization()
-                return self.didAuthorize.map { $0._bridgeToObjectiveC() }.toRACSignal()
+                disposable += self.didAuthorize.start(observer)
             } else {
-                return self.authorized.map { $0._bridgeToObjectiveC() }.toRACSignal()
+                disposable += self.authorized.start(observer)
             }
         }
     }
 
-    public var updateCurrentLocation: RACSignal {
+    public var requestLocation: SignalProducer<CLLocation, NSError> {
         let currentLocationUpdated: SignalProducer<CLLocation, NSError> = didUpdateLocations
             .promoteErrors(NSError.self)
             .take(1)
-            .flatMap(.Concat) {
-                SignalProducer(values: $0)
-            }
+            .flatMap(.Concat, transform: SignalProducer.init(values:))
 
         let locationUpdateFailed: SignalProducer<CLLocation, NSError> = didFailWithError
             .promoteErrors(NSError.self)
-            .flatMap(.Latest) {
-                SignalProducer(error: $0)
-            }
+            .flatMap(.Latest, transform: SignalProducer.init(error:))
 
         return SignalProducer.unify(producers: [currentLocationUpdated, locationUpdateFailed])
             .takeLast(1)
             .on(started: locationManager.requestLocation)
-            .toRACSignal()
     }
 
     public func authorizationStatusEqualTo(status: CLAuthorizationStatus) -> Bool {

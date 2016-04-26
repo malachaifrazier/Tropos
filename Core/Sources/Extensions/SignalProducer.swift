@@ -1,4 +1,5 @@
 import ReactiveCocoa
+import Result
 
 extension SignalProducerType {
     func logAll(name name: String) -> SignalProducer<Value, Error> {

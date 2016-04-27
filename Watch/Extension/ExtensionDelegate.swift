@@ -21,8 +21,23 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     }
 
     func applicationDidFinishLaunching() {
-        WatchUpdateController.defaultController?.activateSession(delegate: self)
+        activateWatchSession()
+        observeApplicationContextUpdates()
+        cacheiPhoneWeatherUpdates()
+        setupWeatherUpdater()
+    }
 
+    func updateWeather() {
+        weatherUpdater.update()
+    }
+}
+
+private extension ExtensionDelegate {
+    func activateWatchSession() {
+        WatchUpdateController.defaultController?.activateSession(delegate: self)
+    }
+
+    func observeApplicationContextUpdates() {
         rac_signalForSelector(#selector(WCSessionDelegate.session(_:didReceiveApplicationContext:)))
             .toSignalProducer()
             .flatMapError { _ in .empty }
@@ -30,15 +45,20 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
             .startWithSignal { signal, _ in
                 applicationContexts = signal
             }
+    }
 
-        weatherUpdater = WeatherUpdater(forecastAPIKey: TRForecastAPIKey)
-        weatherUpdater.errors.observeNext { print("WEATHER UPDATE FAILED:", $0) }
-        weatherUpdater.onWeatherUpdated = {
+    func cacheiPhoneWeatherUpdates() {
+        iphoneWeatherUpdates.observeNext {
             WeatherUpdateCache().archiveWeatherUpdate($0)
         }
     }
 
-    func updateWeather() {
-        weatherUpdater.update()
+    func setupWeatherUpdater() {
+        weatherUpdater = WeatherUpdater(forecastAPIKey: TRForecastAPIKey)
+        weatherUpdater.errors.observeNext { print("WEATHER UPDATE FAILED:", $0) }
+        weatherUpdater.onWeatherUpdated = {
+            WatchUpdateController.defaultController?.sendWeatherUpdate($0)
+            WeatherUpdateCache().archiveWeatherUpdate($0)
+        }
     }
 }

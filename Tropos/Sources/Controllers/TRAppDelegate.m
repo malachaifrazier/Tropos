@@ -30,6 +30,7 @@
 #endif
 
     [[TRSettingsController new] registerSettings];
+    [[TRWatchUpdateController defaultController] activateSessionWithDelegate:self];
 
     self.applicationController = [TRApplicationController new];
 
@@ -38,8 +39,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = self.applicationController.rootViewController;
     [self.window makeKeyAndVisible];
-
-    [[TRWatchUpdateController defaultController] activateSessionWithDelegate:self];
 
     return YES;
 }
@@ -53,6 +52,14 @@
     } error:^(NSError *error) {
         completionHandler(UIBackgroundFetchResultFailed);
     }];
+}
+
+- (void)session:(WCSession *)session didReceiveApplicationContext:(NSDictionary<NSString *,id> *)applicationContext
+{
+    TRWeatherUpdate *update = [[TRWatchUpdateController defaultController] unpackWeatherUpdateFromContext:applicationContext];
+    if (update) {
+        [[TRWeatherUpdateCache new] archiveWeatherUpdate:update];
+    }
 }
 
 - (BOOL)isCurrentlyTesting

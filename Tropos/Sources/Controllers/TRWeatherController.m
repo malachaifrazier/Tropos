@@ -40,11 +40,11 @@
         [[TRAnalyticsController sharedController] trackError:error eventName:@"Error: Weather Update"];
     }];
 
-    [[self latestWeatherUpdates] subscribeNext:^(TRWeatherUpdate *update) {
+    self.weatherUpdater.onWeatherUpdated = ^(TRWeatherUpdate *update) {
         [[TRAnalyticsController sharedController] trackEvent:update];
         [[TRWatchUpdateController defaultController] sendWeatherUpdate:update];
         [[TRWeatherUpdateCache new] archiveWeatherUpdate:update];
-    }];
+    };
 
     return self;
 }

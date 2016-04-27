@@ -1,8 +1,12 @@
 import ReactiveCocoa
 import Result
 
+private let WeatherUpdateTaskName = "com.thoughtbot.carlweathers.updateWeather"
+
 @objc(TRWeatherUpdater) public final class WeatherUpdater: NSObject {
-    private let action: Action<AnyObject?, WeatherUpdate, NSError>
+    private var action: Action<AnyObject?, WeatherUpdate, NSError>!
+
+    public var onWeatherUpdated: (WeatherUpdate -> Void)?
 
     @available(*, unavailable, message="use 'action' instead")
     public private(set) lazy var command: RACCommand = {
@@ -15,16 +19,27 @@ import Result
     }()
 
     public init(forecastAPIKey: String) {
+        super.init()
+
         let forecastController = ForecastController(APIKey: forecastAPIKey)
         let geocodeController = GeocodeController()
         let locationController = LocationController()
 
-        action = Action { _ in
-            locationController.requestAlwaysAuthorization
+        action = Action { [weak self] _ in
+            let update = locationController.requestAlwaysAuthorization
                 .promoteErrors(NSError.self)
                 .then(locationController.requestLocation)
                 .flatMap(.Merge, transform: geocodeController.reverseGeocode)
                 .flatMap(.Merge, transform: forecastController.fetchWeatherUpdate)
+                .on(next: { self?.onWeatherUpdated?($0) })
+
+            let task: SignalProducer<WeatherUpdate, NSError>
+#if os(iOS)
+            task = UIApplication.sharedApplication().rac_backgroundTask(name: WeatherUpdateTaskName, producer: update)
+#else
+            task = NSProcessInfo.processInfo().rac_expiringActivity(reason: WeatherUpdateTaskName, producer: update)
+#endif
+            return task.observeOn(UIScheduler())
         }
     }
 

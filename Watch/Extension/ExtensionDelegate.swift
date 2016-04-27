@@ -32,8 +32,10 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
             }
 
         weatherUpdater = WeatherUpdater(forecastAPIKey: TRForecastAPIKey)
-        weatherUpdater.weatherUpdates.observeNext(cacheWeatherUpdate)
         weatherUpdater.errors.observeNext { print("WEATHER UPDATE FAILED:", $0) }
+        weatherUpdater.onWeatherUpdated = {
+            WeatherUpdateCache().archiveWeatherUpdate($0)
+        }
     }
 
     func applicationDidBecomeActive() {

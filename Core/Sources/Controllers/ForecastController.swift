@@ -36,7 +36,6 @@ final class ForecastController {
                     return SignalProducer(error: error)
                 }
             }
-            .observeOn(UIScheduler())
     }
 }
 

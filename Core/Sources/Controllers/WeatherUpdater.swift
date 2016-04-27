@@ -39,7 +39,15 @@ private let WeatherUpdateTaskName = "com.thoughtbot.carlweathers.updateWeather"
 #else
             task = NSProcessInfo.processInfo().rac_expiringActivity(reason: WeatherUpdateTaskName, producer: update)
 #endif
-            return task.observeOn(UIScheduler())
+
+            // Interrupted events are ignored when bridged to Objective-C.
+            // To ensure that execution signals complete as expected when
+            // bridged via RACCommand, any Interrupted events are mapped
+            // to Completed events to support bridging.
+            //
+            // Note: The call to `completeOnInterrupted()` can be
+            //       removed when Objective-C compatibility is dropped.
+            return task.completedOnInterrupted().observeOn(UIScheduler())
         }
     }
 

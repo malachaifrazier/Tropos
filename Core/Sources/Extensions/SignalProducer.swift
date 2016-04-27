@@ -2,6 +2,10 @@ import ReactiveCocoa
 import Result
 
 extension SignalProducerType {
+    func completedOnInterrupted() -> SignalProducer<Value, Error> {
+        return lift { $0.completeOnInterrupted() }
+    }
+
     func logAll(name name: String) -> SignalProducer<Value, Error> {
         return lift {
             $0.logAll(name: name)

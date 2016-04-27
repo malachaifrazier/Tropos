@@ -77,13 +77,20 @@
 
 - (RACSignal *)locationName
 {
-    RACSignal *startedLocating = [[self.updateWeatherCommand.executing ignore:@NO] mapReplace:NSLocalizedString(@"CheckingWeather", nil)];
-    RACSignal *updatedLocation = RACObserve(self, viewModel.locationName);
-    RACSignal *error = [[RACObserve(self, weatherUpdateError) ignore:nil] map:^id(id value) {
-        return NSLocalizedString(@"UpdateFailed", nil);
-    }];
+    RACSignal *location = [[self.updateWeatherCommand.executionSignals
+        map:^(RACSignal *update) {
+            RACSignal *updatedLocation = [update then:^{
+                return RACObserve(self, viewModel.locationName);
+            }];
+            return [updatedLocation startWith:NSLocalizedString(@"CheckingWeather", nil)];
+        }]
+        switchToLatest];
 
-    return [[RACSignal merge:@[startedLocating, updatedLocation, error]] startWith:nil];
+    RACSignal *error = [[RACObserve(self, weatherUpdateError)
+        ignore:nil]
+        mapReplace:NSLocalizedString(@"UpdateFailed", nil)];
+
+    return [[RACSignal merge:@[location, error]] startWith:nil];
 }
 
 - (RACSignal *)conditionsImage

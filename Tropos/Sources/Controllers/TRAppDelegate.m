@@ -40,7 +40,6 @@
     [self.window makeKeyAndVisible];
 
     [[TRWatchUpdateController defaultController] activateSessionWithDelegate:self];
-    [[TRWatchUpdateController defaultController] sendWeatherUpdate:[[TRWeatherUpdateCache new] latestWeatherUpdate]];
 
     return YES;
 }

@@ -27,6 +27,12 @@ class InterfaceController: WKInterfaceController {
         }
     }
 
+    override func willActivate() {
+        super.willActivate()
+
+        WKExtension.sharedDelegate.updateWeather()
+    }
+
     override func didDeactivate() {
         super.didDeactivate()
 

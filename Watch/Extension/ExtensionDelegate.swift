@@ -38,13 +38,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         }
     }
 
-    func applicationDidBecomeActive() {
+    func updateWeather() {
         weatherUpdater.update()
-    }
-}
-
-private extension ExtensionDelegate {
-    func cacheWeatherUpdate(update: WeatherUpdate) {
-        WeatherUpdateCache().archiveWeatherUpdate(update)
     }
 }

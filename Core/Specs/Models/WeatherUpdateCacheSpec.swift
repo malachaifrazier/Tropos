@@ -35,6 +35,32 @@ final class WeatherUpdateCacheSpec: QuickSpec {
 
                     expect(NSFileManager.defaultManager().isReadableFileAtPath(testWeatherUpdateURL.path!)).to(beTrue())
                 }
+
+                it("won't archive an older weather update") {
+                    let cache = WeatherUpdateCache(fileName: testCacheFileName, inDirectory: testCachesDirectory)
+                    let before = NSDate(timeIntervalSince1970: 0)
+                    let after = NSDate(timeIntervalSince1970: 100)
+                    let olderUpdate = WeatherUpdate(placemark: testPlacemark, currentConditionsJSON: [:], yesterdaysConditionsJSON: [:], date: before)!
+                    let newerUpdate = WeatherUpdate(placemark: testPlacemark, currentConditionsJSON: [:], yesterdaysConditionsJSON: [:], date: after)!
+
+                    cache.archiveWeatherUpdate(newerUpdate)
+                    cache.archiveWeatherUpdate(olderUpdate)
+
+                    expect(cache.latestWeatherUpdate?.date) == newerUpdate.date
+                }
+
+                it("reports success when attempting to archive an older udpdate than what's cached") {
+                    let cache = WeatherUpdateCache(fileName: testCacheFileName, inDirectory: testCachesDirectory)
+                    let before = NSDate(timeIntervalSince1970: 0)
+                    let after = NSDate(timeIntervalSince1970: 100)
+                    let olderUpdate = WeatherUpdate(placemark: testPlacemark, currentConditionsJSON: [:], yesterdaysConditionsJSON: [:], date: before)!
+                    let newerUpdate = WeatherUpdate(placemark: testPlacemark, currentConditionsJSON: [:], yesterdaysConditionsJSON: [:], date: after)!
+
+                    cache.archiveWeatherUpdate(newerUpdate)
+                    let result = cache.archiveWeatherUpdate(olderUpdate)
+
+                    expect(result).to(beTrue())
+                }
             }
 
             context("-latestWeatherUpdate") {

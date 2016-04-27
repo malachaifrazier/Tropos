@@ -30,6 +30,9 @@ private let TRLatestWeatherUpdateFileName = "TRLatestWeatherUpdateFile"
     }
 
     public func archiveWeatherUpdate(weatherUpdate: WeatherUpdate) -> Bool {
+        if let lastCachedDate = latestWeatherUpdate?.date where weatherUpdate.date.precedes(lastCachedDate) {
+            return true
+        }
         return NSKeyedArchiver.archiveRootObject(weatherUpdate, toFile: cachePath)
     }
 }
